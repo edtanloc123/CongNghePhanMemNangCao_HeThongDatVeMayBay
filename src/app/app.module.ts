@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TrangChuComponent } from './components/trangchu/trangchu.component';
 import { ThongTinHanhChinhComponent } from './components/thongtinhanhchinh/thongtinhanhchinh.component';
 import { DangNhapComponent } from './components/dangnhap/dangnhap.component';
+import { DangKyComponent } from './components/dangky/dangky.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TrangChuComponent,
     ThongTinHanhChinhComponent,
-    DangNhapComponent
+    DangNhapComponent,
+    DangKyComponent
   ],
   imports: [
     BrowserModule,

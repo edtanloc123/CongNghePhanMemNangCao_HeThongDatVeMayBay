@@ -1,50 +1,51 @@
 
-<div class="tm-top-bar-bg"></div> 
-<div class="tm-top-bar" id="tm-top-bar">
+<div class="gtco-loader"></div>
+	
+	<div id="page">
 
-    <div class="container">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg narbar-light">
-                <a class="navbar-brand mr-auto" href="#">
-                    <img src="assets/img/z4776623931203_8d1fe3e3e31bfb8c01832dae8314869a.jpg" alt="Site logo">
-                    SkyHigh
-                </a>
-                <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
-                    <ul class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="nav-link"  [routerLink]="['/trangchu']" >Trang chủ <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" [routerLink]="['/thongtinhanhchinh']">Thông tin hành chính</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tm-section-3">Đặt vé</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tm-section-4">Liên hệ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tm-section-4">Đăng ký</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tm-section-4">Đăng nhập</a>
-                    </li>
-                </ul>
-            </div>                            
-        </nav>
-    </div> <!-- row -->
-</div> <!-- container -->
-</div> <!-- .tm-top-bar -->
+	
+	<!-- <div class="page-inner"> -->
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="index.html">SKYHIGH <em>.</em></a></div>
+				</div>
+				<div class="col-xs-8 text-right menu-1">
+					<ul>
+						<li><a [routerLink]="['/thongtinhanhchinh']">Thông Tin Hành Trình</a></li>
+						<li class="has-dropdown">
+							<a href="#">Đặt Vé</a>
+							<ul class="dropdown">
+								<li><a href="#">Europe</a></li>
+								<li><a href="#">Asia</a></li>
+								<li><a href="#">America</a></li>
+								<li><a href="#">Canada</a></li>
+							</ul>
+						</li>
+						<li><a href="pricing.html">Liên hệ</a></li>
+						<li class="has-dropdown">
+							<a href="#">Tài Khoản</a>
+							<ul class="dropdown">
+								<li><a [routerLink]="['/dangnhap']">Đăng nhập</a></li>
+								<li><a [routerLink]="['/dangky']">Đăng ký</a></li>
+								<li><a href="#">Trợ giúp</a></li>
+						
+							</ul>
+						</li>
+					</ul>	
+				</div>
+			</div>
+			
+		</div>
+	</nav>
 <router-outlet></router-outlet>
-<br><br>
-<footer class="tm-container-outer">
-    <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Your Company 
-        
-    . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Template Mo</a></p>
-</footer>
+
+
+<div class="gototop js-top">
+	<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
         
 
     
