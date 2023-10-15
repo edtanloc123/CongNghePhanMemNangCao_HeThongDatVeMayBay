@@ -804,7 +804,7 @@ form label {
   width: 100%;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 768px) {
+@media subjectcreen and (max-width: 768px) {
   .feature-center {
     margin-bottom: 50px;
   }
@@ -1011,7 +1011,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 #gtco-footer .footer-logo span {
   color: #09C6AB;
