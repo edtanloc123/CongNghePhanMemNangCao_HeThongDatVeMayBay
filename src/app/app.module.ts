@@ -8,6 +8,7 @@ import { ThongTinHanhChinhComponent } from './components/thongtinhanhchinh/thong
 import { DangNhapComponent } from './components/dangnhap/dangnhap.component';
 import { DangKyComponent } from './components/dangky/dangky.component';
 import { LienHeComponent } from './components/lienhe/lienhe.component';
+import { DatVeMayBayComponent } from './components/datvemaybay/datvemaybay.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LienHeComponent } from './components/lienhe/lienhe.component';
     ThongTinHanhChinhComponent,
     DangNhapComponent,
     DangKyComponent,
-    LienHeComponent
+    LienHeComponent,
+    DatVeMayBayComponent
   ],
   imports: [
     BrowserModule,

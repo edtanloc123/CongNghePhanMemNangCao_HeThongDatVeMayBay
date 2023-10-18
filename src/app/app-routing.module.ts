@@ -5,6 +5,7 @@ import { ThongTinHanhChinhComponent } from './components/thongtinhanhchinh/thong
 import { DangNhapComponent } from './components/dangnhap/dangnhap.component';
 import { DangKyComponent } from './components/dangky/dangky.component';
 import { LienHeComponent } from './components/lienhe/lienhe.component';
+import { DatVeMayBayComponent } from './components/datvemaybay/datvemaybay.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'lienhe',
     component: LienHeComponent,
+  },
+  {
+    path:'datvemaybay',
+    component: DatVeMayBayComponent,
   }
 ];
 
