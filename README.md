@@ -21,19 +21,23 @@
   7.  ||    Xem trang giới thiệu                      ||      Phạm Nguyễn Gia Bảo
   8.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn
 
-- Sprint 2:
-  - Đặt vé
-  - Xem thông tin chuyển bay
-  - Xem thông tin cá nhân
-  - Viết feedback
+- Sprint 2: 
+  STT ||              Các công việc                      ||     Người thực hiện
+  1.  ||    Đặt vé                                       ||      Trần Tấn Lộc
+  2.  ||    Xem thông tin chuyển bay                     ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
+  3.  ||    Xem thông tin cá nhân                        ||      Trần Tấn Lộc
+  4.  ||    Viết feedback                                ||      Trần Đức Hà Sơn
+
+
 - Sprint 3:
-  - Quản lý khách hàng
-  - Quản lý chuyến bay
-  - Quản lý giá vé
-  - Quản lý tài khoản nhân viên
-  - Xử lý đặt vé và thanh toán
-  - Quản lý hóa đơn
-  - Quản lý feedback của khách hàng
+  STT ||              Các công việc                   ||     Người thực hiện
+  1.  ||    Quản lý khách hàng                        ||      Trần Tấn Lộc
+  2.  ||    Quản lý chuyến bay                        ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
+  3.  ||    Quản lý giá vé                            ||      Trần Tấn Lộc
+  4.  ||    Quản lý tài khoản nhân viên               ||      Trần Đức Hà Sơn
+  5.  ||    Xử lý đặt vé và thanh toán                ||      Nguyễn Quốc Anh Tiến
+  6.  ||    Quản lý hóa đơn                           ||      Nguyễn Quốc Anh Tiến
+  7.  ||    Quản lý feedback của khách hàng           ||      Phạm Nguyễn Gia Bảo
 
 
   
