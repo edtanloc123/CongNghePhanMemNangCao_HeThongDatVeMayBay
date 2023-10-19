@@ -21,7 +21,20 @@
   - Xem trang liên hệ
 
 - Sprint 2:
-- 
+  - Đặt vé
+  - Xem thông tin chuyển bay
+  - Xem thông tin cá nhân
+  - Viết feedback
+- Sprint 3:
+  - Quản lý khách hàng
+  - Quản lý chuyến bay
+  - Quản lý giá vé
+  - Quản lý tài khoản nhân viên
+  - Xử lý đặt vé và thanh toán
+  - Quản lý hóa đơn
+  - Quản lý feedback của khách hàng
+
+
   
 
 
