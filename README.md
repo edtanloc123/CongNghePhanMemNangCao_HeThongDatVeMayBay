@@ -11,14 +11,15 @@
 - Với sự phát triển lớn mạnh của ngành dịch vụ hàng không, chúng em đã tìm hiểu và chọn đề tài với mục tiêu có thể tạo 1 web bán vé máy bay hoàn chỉnh và bắt mắt nhằm lấy kinh nghiệm bòi đắp cho kỹ năng code, cũng như là có thểm kiến thức cách làm một website đẹp mắt để có thể chuẩn bị cho các kỳ thực tập sắp tới.
 ## Sprint
 - Sprint 1:
-  - Xem trang chủ
-  - Liên hệ với dịch vụ hỗ trợ khách hàng
-  - Xem chuyển bay
-  - Kiểm tra chuyến bay
-  - Tìm chuyến bay
-  - Xem trang điểm đến
-  - Xem trang giới thiệu
-  - Xem trang liên hệ
+  STT ||              Các công việc                   ||     Người thực hiện
+  1.  ||    Xem trang chủ                             ||      Trần Tấn Lộc
+  2.  ||    Liên hệ & dịch vụ Hỗ trợ khách hàng       ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
+  3.  ||    Xem chuyến bay                            ||      Trần Tấn Lộc
+  4.  ||    Kiểm tra chuyến bay                       ||      Trần Đức Hà Sơn
+  5.  ||    Tìm chuyến bay                            ||      Nguyễn Quốc Anh Tiến
+  6.  ||    Xem trang điểm đến                        ||      Nguyễn Quốc Anh Tiến
+  7.  ||    Xem trang giới thiệu                      ||      Phạm Nguyễn Gia Bảo
+  8.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn
 
 - Sprint 2:
   - Đặt vé
