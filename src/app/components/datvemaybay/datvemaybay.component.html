@@ -1,4 +1,3 @@
-
 <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(assets/images/z4781305715851_5b9f23c7884b8daf614915b5ba20f585.jpg)">
     <div class="overlay"></div>
     <div class="gtco-container">
@@ -7,37 +6,82 @@
                 <div class="row row-mt-15em">
 
                     <div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
-                        <h1>Thông Tin Hành Trình</h1>	
+                        <h1>Thông Tin Chuyến Bay</h1>	
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
     </div>
 </header>
-  <div class="section trending">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h2 style="text-align: center">Show Times</h2>
-          </div>
-        </div>
-  
-        <!-- Date -->
-        <div class="col-lg-12">
-          <div
-            style="margin-bottom: 20px"
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show-in4-after-dropdown");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropdown-btn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show-in4-after-dropdown')) {
+      openDropdown.classList.remove('show-in4-after-dropdown');
+    }
+    }
+}
+}
+function myFunction2() {
+document.getElementById("myDropdown2").classList.toggle("show-in4-after-dropdown");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropdown-btn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show-in4-after-dropdown')) {
+      openDropdown.classList.remove('show-in4-after-dropdown');
+    }
+    }
+}
+}
+function myFunction3() {
+document.getElementById("myDropdown3").classList.toggle("show-in4-after-dropdown");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropdown-btn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show-in4-after-dropdown')) {
+      openDropdown.classList.remove('show-in4-after-dropdown');
+    }
+    }
+}
+}
+</script>
+<div class="container">
+    <div class="row" style="display: flex;">
+        <div class="col-lg-12" align="center">
+            <div
+            style="margin-bottom: 20px;color: azure;"
             class="btn-group"
             role="group"
             aria-label="Basic radio toggle button group"
           >
             <input
-           
+             
               value="{{ date1 | date : 'fullDate' }}"
               type="radio"
-              class="btn-check"
+              class="btn-check hidden-radio"
               name="btnradio"
               id="btnradio1"
               autocomplete="off"
@@ -49,101 +93,279 @@
               for="btnradio1"
               >{{ date1 | date : "fullDate" }}</label
             >
-  
-            <input
-           
-              value="{{ date2 | date : 'fullDate' }}"
-              type="radio"
-              class="btn-check"
-              name="btnradio"
-              id="btnradio2"
-              autocomplete="off"
-            />
-            <label
-              class="btn btn-outline-primary"
-              style="font-size: 15px"
-              for="btnradio2"
-              >{{ date2 | date : "fullDate" }}</label
-            >
-  
-            <input
-            
-              value="{{ date3 | date : 'fullDate' }}"
-              type="radio"
-              class="btn-check"
-              name="btnradio"
-              id="btnradio3"
-              autocomplete="off"
-            />
-            <label
-              class="btn btn-outline-primary"
-              style="font-size: 15px"
-              for="btnradio3"
-              >{{ date3 | date : "fullDate" }}</label
-            >
-  
-            <input
-             
-              value="{{ date4 | date : 'fullDate' }}"
-              type="radio"
-              class="btn-check"
-              name="btnradio"
-              id="btnradio4"
-            />
-            <label
-              class="btn btn-outline-primary"
-              style="font-size: 15px"
-              for="btnradio4"
-              >{{ date4 | date : "fullDate" }}</label
-            >
-  
-            <input
-             
-              value="{{ date5 | date : 'fullDate' }}"
-              type="radio"
-              class="btn-check"
-              name="btnradio"
-              id="btnradio5"
-              autocomplete="off"
-            />
-            <label
-              class="btn btn-outline-primary"
-              style="font-size: 15px"
-              for="btnradio5"
-              >{{ date5 | date : "fullDate" }}</label
-            >
-  
-            <input
-        
-              value="{{ date6 | date : 'fullDate' }}"
-              type="radio"
-              class="btn-check"
-              name="btnradio"
-              id="btnradio6"
-              autocomplete="off"
-            />
-            <label
-              class="btn btn-outline-primary"
-              style="font-size: 15px"
-              for="btnradio6"
-              >{{ date6 | date : "fullDate" }}</label
-            >
-  
-            <input
-           
-              value="{{ date7 | date : 'fullDate' }}"
-              type="radio"
-              class="btn-check"
-              name="btnradio"
-              id="btnradio7"
-              autocomplete="off"
-            />
-            <label
-              class="btn btn-outline-primary"
-              style="font-size: 15px"
-              for="btnradio7"
-              >{{ date7 | date : "fullDate" }}</label
-            >
+        </div>
+        <div
+        style="margin-bottom: 20px; color: azure;"
+        class="btn-group"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <input
+         
+          value="{{ date2 | date : 'fullDate' }}"
+          type="radio"
+          class="btn-check hidden-radio"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+          checked
+        />
+        <label
+          class="btn btn-outline-primary"
+          style="font-size: 15px"
+          for="btnradio1"
+          >{{ date2 | date : "fullDate" }}</label
+        >
+    </div>
+    <div
+    style="margin-bottom: 20px ;color: azure;"
+    class="btn-group"
+    role="group"
+    aria-label="Basic radio toggle button group"
+  >
+    <input
+     
+      value="{{ date3 | date : 'fullDate' }}"
+      type="radio"
+      class="btn-check hidden-radio"
+      name="btnradio"
+      id="btnradio1"
+      autocomplete="off"
+      checked
+    />
+    <label
+      class="btn btn-outline-primary"
+      style="font-size: 15px"
+      for="btnradio1"
+      >{{ date3 | date : "fullDate" }}</label
+    >
+</div>
+
+          </div>
+         
+
+    </div>
+</div>
+<div class="container" >
+<div class="row">
+    <div class="sticket-1">
+        <div class="selection1">
+          <div class="selection-1">
+            <div class="icon-logo">
+              <div><img src="assets/images/🦆 icon _flight 1_.png" alt=""></div>
+              <div><p>SKYHIGH</p></div>   
+            </div>
+            <div class="in4-flight">
+              <div class="time-di">
+                <div><h3>13:10</h3></div>
+                <div><p>SGN</p></div>
+              </div>
+              <div class="icon-mui-ten">
+                <div><img src="assets/images/🦆 icon _arrow right_.png" alt=""></div>
+              </div>
+              <div class="time-den">
+                <div><h3>14:35</h3></div>
+                <div>HUI</div>
+              </div>
+              <div class="tong-time">
+                <div><h4>1 tiếng 25 phút</h4></div>
+                <div><p>Bay thẳng</p></div>
+              </div>
+              <div class="hanh-ly-sach-tay"></div>
+              <div class="tong-gia">
+                  <div><h3>1.488.000/Khách</h3></div>
+              </div>
+              <a  class="button-select" href="#"><div class="text-chon">
+                  <h3>Chọn</h3>
+              </div></a>
+              <div class="dropdown-in4">
+                  <button class="dropdown-btn" onclick="myFunction()"><img src="assets/images/🦆 icon _keyboard arrow down_.png" alt=""></button>    
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-content" id="myDropdown">
+            <div class="in4-after-dropdown">
+              <div class="logo-after-dropdown">
+                  <div class="icon-after-dropdown"><img src="assets/images/🦆 icon _flight_.png" alt=""></div>
+                  <div class="text-after-dropdown"><p>SKYHIGH</p></div>
+                  <div class="macb-after-dropdown"><p>CB001</p></div>
+                  <div></div>
+              </div>
+              <div class="icon-move-after-dropdown" >
+                  <div><img src="assets/images/🦆 icon _arrow down_.png" alt=""></div>
+              </div>  
+              <div class="time-after-dropdown">
+                <div class="time-di-after-dropdown">
+                  <h3>13:10</h3>
+                  <p>31/13/9999</p>
+                </div>
+                 <div class="dong-ho-after-dropdown">
+                    <div><img src="" alt=""></div>
+                    <div class="tongtime-after-dropdown"><p>1 tiếng 25 phút</p></div>
+                 </div>
+                <div class="time-ve-after-dropdown">
+                  <h3>14:35</h3>
+                  <p>31/13/9999</p>
+                </div> 
+              </div>
+              <div class="dia-diem-after-dropdown">
+                <div class="diem-di-after-dropdown">
+                  <h3>SGN</h3>
+                  <p>Sài gòn</p>
+                </div>
+                <div class="diem-den-after-dropdown">
+                  <h3>HUI</h3>
+                  <p>Huế</p>
+                </div>
+              </div>
           </div>
         </div>
-  
+      </div>  
+      <div class="sticket-2">
+        <div class="selection1">
+          <div class="selection-1">
+            <div class="icon-logo">
+              <div><img src="assets/images/🦆 icon _flight 1_.png" alt=""></div>
+              <div><p>SKYHIGH</p></div>   
+            </div>
+            <div class="in4-flight">
+              <div class="time-di">
+                <div><h3>13:10</h3></div>
+                <div><p>SGN</p></div>
+              </div>
+              <div class="icon-mui-ten">
+                <div><img src="assets/images/🦆 icon _arrow right_.png" alt=""></div>
+              </div>
+              <div class="time-den">
+                <div><h3>14:35</h3></div>
+                <div>HUI</div>
+              </div>
+              <div class="tong-time">
+                <div><h4>1 tiếng 25 phút</h4></div>
+                <div><p>Bay thẳng</p></div>
+              </div>
+              <div class="hanh-ly-sach-tay"></div>
+              <div class="tong-gia">
+                  <div><h3>1.488.000/Khách</h3></div>
+              </div>
+              <a  class="button-select" href="#"><div class="text-chon">
+                  <h3>Chọn</h3>
+              </div></a>
+              <div class="dropdown-in4">
+                  <button class="dropdown-btn" onclick="myFunction2()"><img src="assets/images/🦆 icon _keyboard arrow down_.png" alt=""></button>    
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-content" id="myDropdown2">
+            <div class="in4-after-dropdown">
+              <div class="logo-after-dropdown">
+                  <div class="icon-after-dropdown"><img src="assets/images/🦆 icon _flight_.png" alt=""></div>
+                  <div class="text-after-dropdown"><p>SKYHIGH</p></div>
+                  <div class="macb-after-dropdown"><p>CB001</p></div>
+                  <div></div>
+              </div>
+              <div class="icon-move-after-dropdown" >
+                  <div><img src="assets/images/🦆 icon _arrow down_.png" alt=""></div>
+              </div>  
+              <div class="time-after-dropdown">
+                <div class="time-di-after-dropdown">
+                  <h3>13:10</h3>
+                  <p>31/13/9999</p>
+                </div>
+                 <div class="dong-ho-after-dropdown">
+                    <div><img src="" alt=""></div>
+                    <div class="tongtime-after-dropdown"><p>1 tiếng 25 phút</p></div>
+                 </div>
+                <div class="time-ve-after-dropdown">
+                  <h3>14:35</h3>
+                  <p>31/13/9999</p>
+                </div> 
+              </div>
+              <div class="dia-diem-after-dropdown">
+                <div class="diem-di-after-dropdown">
+                  <h3>SGN</h3>
+                  <p>Sài gòn</p>
+                </div>
+                <div class="diem-den-after-dropdown">
+                  <h3>HUI</h3>
+                  <p>Huế</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div> 
+      <div class="sticket-3">
+        <div class="selection1">
+          <div class="selection-1">
+            <div class="icon-logo">
+              <div><img src="assets/images/🦆 icon _flight 1_.png" alt=""></div>
+              <div><p>SKYHIGH</p></div>   
+            </div>
+            <div class="in4-flight">
+              <div class="time-di">
+                <div><h3>13:10</h3></div>
+                <div><p>SGN</p></div>
+              </div>
+              <div class="icon-mui-ten">
+                <div><img src="assets/images/🦆 icon _arrow right_.png" alt=""></div>
+              </div>
+              <div class="time-den">
+                <div><h3>14:35</h3></div>
+                <div>HUI</div>
+              </div>
+              <div class="tong-time">
+                <div><h4>1 tiếng 25 phút</h4></div>
+                <div><p>Bay thẳng</p></div>
+              </div>
+              <div class="hanh-ly-sach-tay"></div>
+              <div class="tong-gia">
+                  <div><h3>1.488.000/Khách</h3></div>
+              </div>
+              <a  class="button-select" href="#"><div class="text-chon">
+                  <h3>Chọn</h3>
+              </div></a>
+              <div class="dropdown-in4">
+                  <button class="dropdown-btn" onclick="myFunction3()"><img src="assets/images/🦆 icon _keyboard arrow down_.png" alt=""></button>    
+              </div>
+            </div>
+          </div>
+          <div class="dropdown-content" id="myDropdown3">
+            <div class="in4-after-dropdown">
+              <div class="logo-after-dropdown">
+                  <div class="icon-after-dropdown"><img src="assets/images/🦆 icon _flight_.png" alt=""></div>
+                  <div class="text-after-dropdown"><p>SKYHIGH</p></div>
+                  <div class="macb-after-dropdown"><p>CB001</p></div>
+                  <div></div>
+              </div>
+              <div class="icon-move-after-dropdown" >
+                  <div><img src="assets/images/🦆 icon _arrow down_.png" alt=""></div>
+              </div>  
+              <div class="time-after-dropdown">
+                <div class="time-di-after-dropdown">
+                  <h3>13:10</h3>
+                  <p>31/13/9999</p>
+                </div>
+                 <div class="dong-ho-after-dropdown">
+                    <div><img src="" alt=""></div>
+                    <div class="tongtime-after-dropdown"><p>1 tiếng 25 phút</p></div>
+                 </div>
+                <div class="time-ve-after-dropdown">
+                  <h3>14:35</h3>
+                  <p>31/13/9999</p>
+                </div> 
+              </div>
+              <div class="dia-diem-after-dropdown">
+                <div class="diem-di-after-dropdown">
+                  <h3>SGN</h3>
+                  <p>Sài gòn</p>
+                </div>
+                <div class="diem-den-after-dropdown">
+                  <h3>HUI</h3>
+                  <p>Huế</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ConfirmationService, MessageService } from "primeng/api";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrangChuComponent } from './components/trangchu/trangchu.component';
@@ -9,7 +9,12 @@ import { DangNhapComponent } from './components/dangnhap/dangnhap.component';
 import { DangKyComponent } from './components/dangky/dangky.component';
 import { LienHeComponent } from './components/lienhe/lienhe.component';
 import { DatVeMayBayComponent } from './components/datvemaybay/datvemaybay.component';
-
+import { ButtonModule } from "primeng/button";
+import { InputTextModule } from "primeng/inputtext";
+import { ToastModule } from "primeng/toast";
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,9 +27,18 @@ import { DatVeMayBayComponent } from './components/datvemaybay/datvemaybay.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    InputTextModule,
+    ToastModule,
+    RadioButtonModule,
+    SelectButtonModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    ConfirmationService,
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
