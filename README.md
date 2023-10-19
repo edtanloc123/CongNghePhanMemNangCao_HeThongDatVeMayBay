@@ -1,5 +1,5 @@
 <p align="center" width="300">
-   <img align="center" width="200" src="![Imgur Image]https://imgur.com/a/HBh5zRy.png" />
+   <img align="center" width="200" src="![Imgur](https://i.imgur.com/ELJ3zZk.png)" />
    <h3 align="center">Dự án Bán Vé Máy Bay của nhóm 1</h3>
 </p>
 
