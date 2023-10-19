@@ -1,27 +1,11 @@
-# DatVeMayBay
+# Dự án Đặt Vé Máy Bay của nhóm 1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+## Thành viên
+- Trần Tấn Lộc 21DH111062
+- Trần Đức Hà Sơn 21DH113354
+- Phạm Nguyễn Gia Bảo 21DH110161
+- Nguyễn Quốc Anh Tiến 21DH113016
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Giới thiệu sơ lược đồ án
+- Du lịch hiện là một trong những nhu cầu lớn mà ai cũng mong ước, không phân biệt độ tuổi hay cấp bậc, ai cũng đều có mong ước được đi du lịch khắp nơi hoặc nhỏ hơn là có thể đi du lịch ra các tỉnh thành khác trong 64 tỉnh thành của đất nước mình. Với nhu cầu và với thời đại phát triển, web bán vé máy bay là thứ cần thiết nhằm phục vụ nhu cầu của người tiêu dùng, là những vị Khách hàng mong muốn được đi du lịch.
+- Với sự phát triển lớn mạnh của ngành dịch vụ hàng không, chúng em đã tìm hiểu và chọn đề tài với mục tiêu có thể tạo 1 web bán vé máy bay hoàn chỉnh và bắt mắt nhằm lấy kinh nghiệm bòi đắp cho kỹ năng code, cũng như là có thểm kiến thức cách làm một website đẹp mắt để có thể chuẩn bị cho các kỳ thực tập sắp tới.
