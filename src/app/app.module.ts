@@ -15,6 +15,10 @@ import { ToastModule } from "primeng/toast";
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { BaseUrlService } from './services/baseUrl.service';
+import { ThongTinChuyenBayAPIService } from './services/thongtinchuyenbayAPI.service';
+import { SanBayAPIService } from './services/sanbayAPI.service';
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,11 +37,16 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     ToastModule,
     RadioButtonModule,
     SelectButtonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     ConfirmationService,
-    MessageService
+    MessageService,
+    BaseUrlService,
+    ThongTinChuyenBayAPIService,
+    SanBayAPIService
+
   ],
   bootstrap: [AppComponent]
 })

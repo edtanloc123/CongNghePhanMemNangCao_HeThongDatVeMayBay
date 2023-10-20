@@ -8,23 +8,29 @@
                         <h1>
                             "Tìm kiếm chuyến bay hoàn hảo của bạn!"</h1>	
                     </div>
+                   
                     <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
                         <div class="form-wrap">
                             <div class="tab">
-                                
+                              
                                 <div class="tab-content">
                                     <div class="tab-content-inner active" data-content="signup">
                                         <h3>Tìm kiếm chuyến bay</h3>
+                                        
                                         <form action="#">
+                                            
                                             <div class="row form-group">
                                                 <div class="col-md-12">
+                                                    
                                                     <label for="activities">Từ</label>
                                                     <select name="#" id="activities" class="form-control">
-                                                        <option value="">Activities</option>
-                                                        <option value="">Hiking</option>
-                                                        <option value="">Caving</option>
-                                                        <option value="">Swimming</option>
+                                                        <ng-container *ngIf="thongtinchuyenbays != null">
+                                                        <option value=""></option>
+                                                        <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maCb}}">{{thongtinchuyenbay.tenCb}}</option>
+                                                       
+                                                    </ng-container>
                                                     </select>
+                                                
                                                 </div>
                                             </div>
                                             <div class="row form-group">
@@ -44,28 +50,32 @@
                                                     <input type="text" id="date-start" class="form-control">
                                                 </div>
                                             </div>
-                                            
+                                        
                                             <!-- <div class="row form-group">
                                                 <div class="col-md-12">
                                                     <label for="date-end">Date Travel</label>
                                                     <input type="text" id="date-end" class="form-control">
                                                 </div>
                                             </div> -->
-                                            
+                                        
 
                                             <div class="row form-group">
                                                 <div class="col-md-12">
                                                     <input type="submit" class="btn btn-primary btn-block" value="Tìm Kiếm">
                                                 </div>
                                             </div>
+                                       
                                         </form>	
+
                                     </div>
 
                                     
                                 </div>
+                            
                             </div>
                         </div>
                     </div>
+                 
                 </div>
                         
                 
@@ -280,7 +290,7 @@
 </div>
 
 
-<footer class="tm-container-outer">
+<footer class="tm-container-outer" style="background-color: #09C6AB">
     <p class="mb-0">Copyright © <span class="tm-current-year">2023</span> SKYHIGH
         
     . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">SKYHIGH</a></p>

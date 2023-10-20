@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
 
   templateUrl: './datvemaybay.component.html',
   styleUrls: ['./datvemaybay.component.css']
 })
 export class DatVeMayBayComponent implements OnInit {
+  
+  
     todayDate1: Date = new Date();
     todayDate2: Date = new Date();
     todayDate3: Date = new Date();
