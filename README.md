@@ -1,27 +1,48 @@
-# DatVeMayBay
+<p align="center" width="300">
+   <img align="center" width="200" src="![Imgur](https://i.imgur.com/ELJ3zZk.png)" />
+   <h3 align="center">Dự án Bán Vé Máy Bay của nhóm 1</h3>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+## Thành viên
+- Trần Tấn Lộc 21DH111062
+- Trần Đức Hà Sơn 21DH113354
+- Phạm Nguyễn Gia Bảo 21DH110161
+- Nguyễn Quốc Anh Tiến 21DH113016
 
-## Development server
+## Giới thiệu sơ lược đồ án
+- Du lịch hiện là một trong những nhu cầu lớn mà ai cũng mong ước, không phân biệt độ tuổi hay cấp bậc, ai cũng đều có mong ước được đi du lịch khắp nơi hoặc nhỏ hơn là có thể đi du lịch ra các tỉnh thành khác trong 64 tỉnh thành của đất nước mình. Với nhu cầu và với thời đại phát triển, web bán vé máy bay là thứ cần thiết nhằm phục vụ nhu cầu của người tiêu dùng, là những vị Khách hàng mong muốn được đi du lịch.
+- Với sự phát triển lớn mạnh của ngành dịch vụ hàng không, chúng em đã tìm hiểu và chọn đề tài với mục tiêu có thể tạo 1 web bán vé máy bay hoàn chỉnh và bắt mắt nhằm lấy kinh nghiệm bòi đắp cho kỹ năng code, cũng như là có thểm kiến thức cách làm một website đẹp mắt để có thể chuẩn bị cho các kỳ thực tập sắp tới.
+## Sprint
+- Sprint 1:
+  STT ||              Các công việc                   ||     Người thực hiện
+  1.  ||    Xem trang chủ                             ||      Trần Tấn Lộc
+  2.  ||    Liên hệ & dịch vụ Hỗ trợ khách hàng       ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
+  3.  ||    Xem chuyến bay                            ||      Trần Tấn Lộc
+  4.  ||    Kiểm tra chuyến bay                       ||      Trần Đức Hà Sơn
+  5.  ||    Tìm chuyến bay                            ||      Nguyễn Quốc Anh Tiến
+  6.  ||    Xem trang điểm đến                        ||      Nguyễn Quốc Anh Tiến
+  7.  ||    Xem trang giới thiệu                      ||      Phạm Nguyễn Gia Bảo
+  8.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Sprint 2: 
+  STT ||              Các công việc                      ||     Người thực hiện
+  1.  ||    Đặt vé                                       ||      Trần Tấn Lộc
+  2.  ||    Xem thông tin chuyển bay                     ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
+  3.  ||    Xem thông tin cá nhân                        ||      Trần Tấn Lộc
+  4.  ||    Viết feedback                                ||      Trần Đức Hà Sơn
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Sprint 3:
+  STT ||              Các công việc                   ||     Người thực hiện
+  1.  ||    Quản lý khách hàng                        ||      Trần Tấn Lộc
+  2.  ||    Quản lý chuyến bay                        ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
+  3.  ||    Quản lý giá vé                            ||      Trần Tấn Lộc
+  4.  ||    Quản lý tài khoản nhân viên               ||      Trần Đức Hà Sơn
+  5.  ||    Xử lý đặt vé và thanh toán                ||      Nguyễn Quốc Anh Tiến
+  6.  ||    Quản lý hóa đơn                           ||      Nguyễn Quốc Anh Tiến
+  7.  ||    Quản lý feedback của khách hàng           ||      Phạm Nguyễn Gia Bảo
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
