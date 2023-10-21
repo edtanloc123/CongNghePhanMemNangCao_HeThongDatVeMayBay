@@ -24,9 +24,9 @@
                                                     
                                                     <label for="activities">Từ</label>
                                                     <select name="#" id="activities" class="form-control">
-                                                        <ng-container *ngIf="thongtinchuyenbays != null">
-                                                        <option value=""></option>
-                                                        <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maCb}}">{{thongtinchuyenbay.tenCb}}</option>
+                                                        <ng-container *ngIf="sanbays != null">
+                                                        <option value="">Chọn</option>
+                                                        <option *ngFor="let sanbay of sanbays" value="{{sanbay.maSbay}}">{{sanbay.tenTinhThanh}}</option>
                                                        
                                                     </ng-container>
                                                     </select>
@@ -37,10 +37,10 @@
                                                 <div class="col-md-12">
                                                     <label for="activities">Đến</label>
                                                     <select name="#" id="activities" class="form-control">
-                                                        <option value="">Activities</option>
-                                                        <option value="">Hiking</option>
-                                                        <option value="">Caving</option>
-                                                        <option value="">Swimming</option>
+                                                        <ng-container *ngIf="sanbays != null">
+                                                        <option value="">Chọn</option>
+                                                        <option *ngFor="let sanbay of sanbays" value="{{sanbay.maSbay}}">{{sanbay.tenTinhThanh}}</option>
+                                                    </ng-container>
                                                     </select>
                                                 </div>
                                             </div>
