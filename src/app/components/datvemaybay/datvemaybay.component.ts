@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { SanBay } from 'src/app/models/sanbay.model';
+import { ThongTinChuyenBay } from 'src/app/models/thongtinchuyenbay.model';
+import { SanBayAPIService } from 'src/app/services/sanbayAPI.service';
+import { ThongTinChuyenBayAPIService } from 'src/app/services/thongtinchuyenbayAPI.service';
 
 
 @Component({
@@ -8,7 +13,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatVeMayBayComponent implements OnInit {
   
-  
+  constructor(
+    private thongtinchuyenbayAPIService:ThongTinChuyenBayAPIService,
+    private sanbayAPIService:SanBayAPIService,
+    private activatedRoute : ActivatedRoute
+  ){}
+  thongtinchuyenbays:ThongTinChuyenBay[];
+  sanbay:SanBay;
     todayDate1: Date = new Date();
     todayDate2: Date = new Date();
     todayDate3: Date = new Date();
@@ -30,12 +41,24 @@ export class DatVeMayBayComponent implements OnInit {
     
   
     dateSelected: Date;
-    paymentOptions: any[] = [
-        { name: 'Option 1', value: 1 },
-        { name: 'Option 2', value: 2 },
-        { name: 'Option 3', value: 3 }
-    ];
+    // paymentOptions: any[] = [
+    //     { name: 'Option 1', value: 1 },
+    //     { name: 'Option 2', value: 2 },
+    //     { name: 'Option 3', value: 3 }
+    // ];
     ngOnInit() {
+      this.thongtinchuyenbayAPIService.findAll().then(
+        res => {
+            this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
+           console.log(this.thongtinchuyenbays);
+           
+        },
+        err => {
+            console.log(err);
+        }
+       )
+     
+   
       this.date1 = this.todayDate1.setDate(this.todayDate1.getDate() + 0);
       this.date2 = this.todayDate2.setDate(this.todayDate2.getDate() + 1);
       this.date3 = this.todayDate3.setDate(this.todayDate3.getDate() + 2);

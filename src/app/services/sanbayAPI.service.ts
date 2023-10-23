@@ -11,4 +11,7 @@ export class SanBayAPIService{
     async findAll(){
         return await lastValueFrom(this.httpClient.get(this.baseUrlService.getBaseUrl() + 'sanbay/findall'));
     }
+    async find(maSbaydi: String, maSbayden: String) {
+        return await lastValueFrom(this.httpClient.get(this.baseUrlService.getBaseUrl() + 'sanbay/find' + maSbaydi + '/' + maSbayden));
+    }
 }

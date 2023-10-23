@@ -19,6 +19,7 @@ import { BaseUrlService } from './services/baseUrl.service';
 import { ThongTinChuyenBayAPIService } from './services/thongtinchuyenbayAPI.service';
 import { SanBayAPIService } from './services/sanbayAPI.service';
 import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import { HttpClientModule } from "@angular/common/http";
     RadioButtonModule,
     SelectButtonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     ConfirmationService,

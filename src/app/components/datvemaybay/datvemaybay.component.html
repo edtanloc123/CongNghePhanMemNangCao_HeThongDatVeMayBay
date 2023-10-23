@@ -88,10 +88,15 @@
           </div>
     </div>
 </div>
+<ng-container *ngFor="let thongtinchuyenbay of thongtinchuyenbays">
 <div class="section">
+
   <div class="tpd-plan">
+    
     <div class="tp-flight-plan">
+        
       <div class="container-fluid">
+
           <div class="crop depart">
               <div class="context collapsed" data-toggle="collapse" data-target="#demo2">
                   <a role="button" tabindex="0" class="tog-cal itin-det-btn">
@@ -101,7 +106,7 @@
                   <div class="item it-1">
                       <label class="trip-type depart">Chuyến đi</label>
                       <div class="airline-image">
-                          <div class="df-text">1 tiếng 25 phút</div>
+                          <div class="df-text">1 tiếng 30 phút</div>
                           <span class="img-wrapper">
                               <svg class="anime-airplane">
                                   <use xlink:href="#airplane"></use>
@@ -111,23 +116,23 @@
 
                       <div class="port-seg">
                           <div class="flight-seg origin">
-                              <div class="time">10:30</div>
-                              <div class="port">HUI</div>
-                              <div class="name">Huế</div>
+                              <div class="time">{{thongtinchuyenbay.gioCatCanh}}</div>
+                              <div class="port">{{thongtinchuyenbay.maSbayDi}}</div>
+                              <div class="name">{{this.thongtinchuyenbay.tenTinhThanhSanBayDi}}</div>
                           </div>
                           <div class="flight-seg destination">
-                              <div class="time">11:55</div>
-                              <div class="port">SGN</div>
-                              <div class="name">TP.HCM</div>
+                              <div class="time">{{thongtinchuyenbay.gioHaCanh}}</div>
+                              <div class="port">{{thongtinchuyenbay.maSbayDen}}</div>
+                              <div class="name">{{this.thongtinchuyenbay.tenTinhThanhSanBayDen}}</div>
                           </div>
                       </div>
                   </div>
                   <div class="item it-2">
                       <div class="dr-row">
-                          <span class="al-name">CB001</span>
+                          <span class="al-name">{{thongtinchuyenbay.maCb}}</span>
                           <img class="airline-logo" src="https://images.ucuzabilet.com/resources/img/flights-logo/logo25x19/25px-PC.png" />
                       </div>
-                      <div class="take-tim">32-13-9999</div>
+                      <div class="take-tim">{{thongtinchuyenbay.ngayCatCanh}}</div>
                   </div>
               </div>
               <div id="demo2" class="fly-wrap collapse">
@@ -137,21 +142,21 @@
                               <img class="airline-logo" src="https://www.turkishairlines.com/theme/img/carrierairlines/carriercode_tk.png" /> <span>SKYHIGH AIRLINE</span>
                           </div>
                           <div class="root-de">
-                              <div class="times"> 1h25' </div>
+                              <div class="times"> 1h25'</div>
                               <div class="directs">
                                   <div class="itin-time">
                                       <div class="itin-lines"></div>
                                   </div>
 
                                   <div class="hour-sm">
-                                      <div class="hour-time-sm">10h30</div>
-                                      <div class="hour-time-sm">11h35</div>
+                                      <div class="hour-time-sm">{{thongtinchuyenbay.gioCatCanh}}</div>
+                                      <div class="hour-time-sm">{{thongtinchuyenbay.gioHaCanh}}</div>
                                   </div>
                               </div>
 
                               <div class="itin-target">
-                                  <div class="tar-label">Huế</div>
-                                  <div class="tar-label">TP.HCM</div>
+                                  <div class="tar-label">{{this.thongtinchuyenbay.tenTinhThanhSanBayDi}}</div>
+                                  <div class="tar-label">{{this.thongtinchuyenbay.tenTinhThanhSanBayDen}}</div>
                               </div>
                           </div>
 
@@ -163,160 +168,15 @@
                   </div>
               </div>
           </div>
-
-          <div class="crop depart">
-              <div class="context collapsed" data-toggle="collapse" data-target="#demo">
-                  <a role="button" tabindex="0" class="tog-cal itin-det-btn">
-                      <i class="fa fa-chevron-up"></i>
-                      <i class="fa fa-chevron-down"></i>
-                  </a>
-                  <div class="item it-1">
-                      <label class="trip-type depart">Chuyến đi</label>
-                      <div class="airline-image">
-                          <div class="df-text">1 tiếng 25 phút</div>
-                          <span class="img-wrapper">
-                              <svg class="anime-airplane">
-                                  <use xlink:href="#airplane"></use>
-                              </svg>
-                          </span>
-                      </div>
-
-                      <div class="port-seg">
-                          <div class="flight-seg origin">
-                              <div class="time">10:30</div>
-                              <div class="port">HUI</div>
-                              <div class="name">Huế</div>
-                          </div>
-                          <div class="flight-seg destination">
-                              <div class="time">11:55</div>
-                              <div class="port">SGN</div>
-                              <div class="name">TP.HCM</div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item it-2">
-                      <div class="dr-row">
-                          <span class="al-name">CB002</span>
-                          <img class="airline-logo" src="https://images.ucuzabilet.com/resources/img/flights-logo/logo25x19/25px-EY.png" />
-                      </div>
-                      <div class="take-tim">32-13-9999</div>
-                  </div>
-              </div>
-              <div id="demo" class="fly-wrap collapse">
-                  <div class="fly-det">
-                      <div class="f-item">
-                          <div class="airway-title">
-                              <img class="airline-logo" src="https://www.turkishairlines.com/theme/img/carrierairlines/carriercode_tk.png" /> <span>SKYHIGH AIRLINE</span>
-                          </div>
-                          <div class="root-de">
-                              <div class="times"> 2 tiếng </div>
-                              <div class="directs">
-                                  <div class="itin-time">
-                                      <div class="itin-lines"></div>
-                                  </div>
-
-                                  <div class="hour-sm">
-                                      <div class="hour-time-sm">12:30</div>
-
-                                      <div class="hour-time-sm">13:55</div>
-                                  </div>
-                              </div>
-
-                              <div class="itin-target">
-                                  <div class="tar-label">Huế</div>
-                                  <div class="tar-label">TP.HCM</div>
-                              </div>
-                          </div>
-
-                      </div>
-                  </div>
-                  <div class="arrival-info">
-                  <!--btn-->
-                  <a href="#" class="btn-chon"><div class="btn-chon-1"><h3>Chọn</h3></div></a>
-                  </div>
-              </div>
-
-          </div>
-
-          <div class="crop return">
-              <div class="context collapsed" data-toggle="collapse" data-target="#demo3">
-                  <a role="button" tabindex="0" class="tog-cal itin-det-btn">
-                      <i class="fa fa-chevron-up"></i>
-                      <i class="fa fa-chevron-down"></i>
-                  </a>
-                  <div class="item it-1">
-                      <label class="trip-type return">Chuyến về</label>
-                      <div class="airline-image">
-                          <div class="df-text">1 giờ 25 phút</div>
-                          <span class="img-wrapper">
-                              <svg class="anime-airplane">
-                                  <use xlink:href="#airplane"></use>
-                              </svg>
-                          
-                          </span>
-                      </div>
-
-                      <div class="port-seg">
-                          <div class="flight-seg origin">
-                              <div class="time">10:30</div>
-                              <div class="port">HUI</div>
-                              <div class="name">Huế</div>
-                          </div>
-                          <div class="flight-seg destination">
-                              <div class="time">11:55</div>
-                              <div class="port">SGN</div>
-                              <div class="name">TP.HCM</div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item it-2">
-                      <div class="dr-row">
-                          <span class="al-name">CB003</span>
-                          <img class="airline-logo" src="https://images.ucuzabilet.com/resources/img/flights-logo/logo25x19/25px-PC.png" />
-                      </div>
-                      <div class="take-tim">32-13-9999</div>
-                  </div>
-              </div>
-              <div id="demo3" class="fly-wrap collapse">
-                  <div class="fly-det">
-                      <div class="f-item">
-                          <div class="airway-title">
-                              <img class="airline-logo" src="https://www.turkishairlines.com/theme/img/carrierairlines/carriercode_tk.png" /> <span>SKYHIGH AIRLINE</span>
-                          </div>
-                          <div class="root-de">
-                              <div class="times"> 2 tiếng</div>
-                              <div class="directs">
-                                  <div class="itin-time">
-                                      <div class="itin-lines"></div>
-                                  </div>
-
-                                  <div class="hour-sm">
-                                      <div class="hour-time-sm">2h30</div>
-
-                                      <div class="hour-time-sm">3h55</div>
-                                  </div>
-                              </div>
-
-                              <div class="itin-target">
-                                  <div class="tar-label">Huế</div>
-                                  <div class="tar-label">TP.HCM</div>
-                              </div>
-                          </div>
-                          <div class="arrival-info">
-                              <!--btn-->
-                              <a href="#" class="btn-chon"><div class="btn-chon-1"><h3>Chọn</h3></div></a>
-                              </div>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-
-
+      
+   
       </div>
 
-  </div>                                             
+  </div>      
+                       
+
 </div>
+  
     <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
     <symbol  id="airplane" viewBox="243.5 245.183 25 21.633">
       <g>
@@ -326,4 +186,31 @@
       </g>
     </symbol>
   </svg>
+ 
+</div>
+</ng-container>
+<div id="gtco-subscribe" style="background-color: cadetblue;">
+    <div class="gtco-container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                <h2>Hãy gửi gmail đến chúng tôi</h2>
+                <p>Khách hàng sẽ nhận về những thông tin mới nhất về các chuyến bay và dịch vụ tốt nhất của hãng hàng không SKYHIGH</p>
+            </div>
+        </div>
+        <div class="row animate-box" >
+            <div class="col-md-8 col-md-offset-2">
+                <form class="form-inline">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <button type="submit" class="btn btn-default btn-block">Gửi</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
