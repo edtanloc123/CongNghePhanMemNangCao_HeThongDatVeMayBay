@@ -11,6 +11,7 @@
     padding: 5px;
     margin: 5px;
     flex: 0.6;
+    margin-top: 5px;
 }
 
 .right {
@@ -18,6 +19,7 @@
     border-radius: 4px ;
     padding: 5px;
     margin: 5px;
+    margin-top: 5px;
 }
 
 form {
@@ -96,10 +98,7 @@ button{
     font-size: 16px;
     font-family: Arial, sans-serif;
 }
-.ThongTinCoBan{
-    color:white;
 
-}
 .flex{
     display: flex;
     flex-grow: 1;
@@ -112,9 +111,11 @@ button{
 }
 .input-thongtin{
     width: 60%;
+    
 }
 .input-thongtin input{
     width: 90%;
+    height: 50px;
 }
 .custom-fileInput{
     display: inline-block;
@@ -131,10 +132,7 @@ button{
     margin-left: 20px;
 }
 .btn-submit{
-    background-color: #4CAF50;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
+   
 }
 .btn-submit p{
     text-align: center;
@@ -145,10 +143,37 @@ button{
     text-decoration: none;
     color: white;
 }
+.btn-quayve{
+    margin-right: 1%;
+}
 .btn-submit-1 input{
     width: 150px;
     height: 50px;
     border-radius: 10px;
+}
+.btn-submit-thanhtoan{
+    background-color: #4CAF50;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+   
+}
+.btn-submit-thanhtoan p{
+    color: white;
+}
+.center-text-1 p{
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+.btn-submit-quayve{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-top: 6px;
 }
 .btn-submit-1{
     margin-top: 12px;
@@ -156,7 +181,7 @@ button{
 .combo-submit{
     position: relative;
     width: fit-content;
-    margin-left: 50%;
+    margin-left: 30%;
 }
 .thongtinbosung{
     margin-left: 100px;
@@ -204,4 +229,5 @@ button{
     align-items: center;
     margin-top:2%;
     margin-bottom: 2%;
+    margin-left: 1%;
 }

@@ -21,6 +21,7 @@ import { SanBayAPIService } from './services/sanbayAPI.service';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.component';
+import { FormLienHeAPIService } from './services/formlienheAPI.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,8 @@ import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.co
     MessageService,
     BaseUrlService,
     ThongTinChuyenBayAPIService,
-    SanBayAPIService
+    SanBayAPIService,
+    FormLienHeAPIService
 
   ],
   bootstrap: [AppComponent]
