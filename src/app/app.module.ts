@@ -20,6 +20,7 @@ import { ThongTinChuyenBayAPIService } from './services/thongtinchuyenbayAPI.ser
 import { SanBayAPIService } from './services/sanbayAPI.service';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     DangNhapComponent,
     DangKyComponent,
     LienHeComponent,
-    DatVeMayBayComponent
+    DatVeMayBayComponent,
+    ChiTietDatVeComponent
   ],
   imports: [
     BrowserModule,

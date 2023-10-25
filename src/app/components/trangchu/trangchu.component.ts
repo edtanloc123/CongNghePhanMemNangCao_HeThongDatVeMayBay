@@ -11,6 +11,9 @@ import { ThongTinChuyenBayAPIService } from 'src/app/services/thongtinchuyenbayA
 })
 export class TrangChuComponent implements OnInit{
   search: FormGroup;
+  maSbayDi:any;
+  maSbayDen:any;
+  ngayCatCanh:any;
   constructor(
     private thongtinchuyenbayAPIService:ThongTinChuyenBayAPIService,
     private sanbayAPIService:SanBayAPIService,
@@ -20,11 +23,7 @@ export class TrangChuComponent implements OnInit{
   thongtinchuyenbays:ThongTinChuyenBay[];
   sanbays:SanBay[];
   ngOnInit(){
-    this.search = this.formBuilder.group({
-      masbaydi: '',
-      masbayve: '',
-      ngaycatcanh:''
-    });
+    
     this.thongtinchuyenbayAPIService.findAll().then(
       res => {
           this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
@@ -44,12 +43,20 @@ export class TrangChuComponent implements OnInit{
           console.log(err);
       }
      );
+     this.search = this.formBuilder.group({
+      maSbayDi: '',
+      maSbayDen: '',
+      ngayCatCanh:''
+    });
   }
   search1(){
-    var maSbayDi: string = this.search.value.maSbayDi;
-    var maSbayDen: string = this.search.value.maSbayDen;
-    var ngayCatCanh: any = this.search.value.ngayCatCanh;
+    var account:ThongTinChuyenBay =this.search.value as ThongTinChuyenBay;
+    console.log(account);
+    var ngayCatCanh=account.ngayCatCanh.toString();
+    var maSbayDi=account.maSbayDi.toString();
+    var maSbayDen=account.maSbayDen.toString();
     this.thongtinchuyenbayAPIService.search(maSbayDi,maSbayDen,ngayCatCanh).then(
+      
       res=>{
         this.thongtinchuyenbays=res as ThongTinChuyenBay[];
         console.log(this.thongtinchuyenbays);

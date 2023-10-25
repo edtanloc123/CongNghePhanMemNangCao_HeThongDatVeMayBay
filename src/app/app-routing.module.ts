@@ -6,6 +6,7 @@ import { DangNhapComponent } from './components/dangnhap/dangnhap.component';
 import { DangKyComponent } from './components/dangky/dangky.component';
 import { LienHeComponent } from './components/lienhe/lienhe.component';
 import { DatVeMayBayComponent } from './components/datvemaybay/datvemaybay.component';
+import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path:'datvemaybay',
     component: DatVeMayBayComponent,
+  },
+  {
+    path:'chitietdatve',
+    component: ChiTietDatVeComponent,
   }
 ];
 

@@ -90,7 +90,8 @@ export class DatVeMayBayComponent implements OnInit {
 search1(){
   var account:ThongTinChuyenBay =this.search.value as ThongTinChuyenBay;
     console.log(account);
-  this.thongtinchuyenbayAPIService.search(account.maSbayDi,account.maSbayDen,account.ngayCatCanh).then(
+    var ngayCatCanh=account.ngayCatCanh.toString();
+  this.thongtinchuyenbayAPIService.search(account.maSbayDi,account.maSbayDen,ngayCatCanh).then(
     res=>{
       this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
     },err=>{

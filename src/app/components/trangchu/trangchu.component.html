@@ -17,16 +17,16 @@
                                     <div class="tab-content-inner active" data-content="signup">
                                         <h3>Tìm kiếm chuyến bay</h3>
                                         
-                                        <form >
+                                        <form method="get"  [formGroup]="search" (click)="search1()">
                                             
                                             <div class="row form-group">
                                                 <div class="col-md-12">
                                                     
                                                     <label for="activities">Từ</label>
-                                                    <select name="#" id="activities" class="form-control">
+                                                    <select name="#" id="activities" class="form-control" formControlName="maSbayDi">
                                                         <ng-container *ngIf="thongtinchuyenbays != null">
                                                         <option value="">Chọn</option>
-                                                        <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maSbayDi}}" formControlName="maSbayDi">{{thongtinchuyenbay.tenTinhThanhSanBayDi}}</option>
+                                                        <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maSbayDi}}" >{{thongtinchuyenbay.tenTinhThanhSanBayDi}}</option>
                                                        
                                                     </ng-container>
                                                     </select>
@@ -36,10 +36,10 @@
                                             <div class="row form-group">
                                                 <div class="col-md-12">
                                                     <label for="activities">Đến</label>
-                                                    <select name="#" id="activities" class="form-control">
+                                                    <select name="#" id="activities" class="form-control" formControlName="maSbayDen">
                                                         <ng-container *ngIf="thongtinchuyenbays != null">
                                                         <option value="">Chọn</option>
-                                                        <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maSbayDen}}" formControlName="maSbayDen">{{thongtinchuyenbay.tenTinhThanhSanBayDen}}</option>
+                                                        <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maSbayDen}}" >{{thongtinchuyenbay.tenTinhThanhSanBayDen}}</option>
                                                     </ng-container>
                                                     </select>
                                                 </div>

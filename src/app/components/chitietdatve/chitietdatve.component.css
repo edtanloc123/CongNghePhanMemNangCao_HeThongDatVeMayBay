@@ -1,0 +1,207 @@
+.container {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex
+}
+
+.left {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #69c6ba;
+    padding: 5px;
+    margin: 5px;
+    flex: 0.6;
+}
+
+.right {
+    border: 2px solid black; 
+    border-radius: 4px ;
+    padding: 5px;
+    margin: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px;
+}
+
+button{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 10px;
+    color:white
+}
+.buttonround {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 100%;
+    color: white
+}
+.left h3 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.right h3 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left label {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.right label {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.left input {
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.left select {
+    width: 30%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.ThongTinCoBan{
+    color:white;
+
+}
+.flex{
+    display: flex;
+    flex-grow: 1;
+    margin: 20px 20px;
+    margin-left: 10%;
+}
+.label-text{
+    margin: 10px 10px;
+    width: 20%;
+}
+.input-thongtin{
+    width: 60%;
+}
+.input-thongtin input{
+    width: 90%;
+}
+.custom-fileInput{
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+}
+.chon-fileButton{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.btn-submit{
+    background-color: #4CAF50;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+.btn-submit p{
+    text-align: center;
+    position: relative;
+    top:30%;
+}
+.btn-quayve a{
+    text-decoration: none;
+    color: white;
+}
+.btn-submit-1 input{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+.btn-submit-1{
+    margin-top: 12px;
+}
+.combo-submit{
+    position: relative;
+    width: fit-content;
+    margin-left: 50%;
+}
+.thongtinbosung{
+    margin-left: 100px;
+}
+.thong-tin-chuyen-bay{
+    margin-top: 15%;
+    border: solid;
+    border-width:2px ;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+.thong-tin-cat-canh{
+    width: 30%;
+}
+.thong-tin-ha-canh{
+    width: 30%;
+}
+.icon-may-bay{
+    width: 30%;
+}
+.icon-may-bay img{
+    transform: rotate(90deg);
+    
+}
+.center-text{
+    text-align: center;
+}
+.center-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.content-thongtinchuyenbay{
+    width:100%; 
+    height:400px;
+}
+.btn-thanhtoan a{
+    text-decoration: none;
+    color: white;
+}
+.btn-thanhtoan{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top:2%;
+    margin-bottom: 2%;
+}
