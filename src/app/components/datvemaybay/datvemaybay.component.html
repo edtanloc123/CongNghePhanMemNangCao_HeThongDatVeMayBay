@@ -13,15 +13,16 @@
         </div>
     </div>
 </header>
-<div >
-    <div class="container" >
+<div class="thongtinchuyenbay-container">
+    <div class="container-1" >
+        <div><h3 style="margin-left: 4%;">TÌM KIẾM THÔNG TIN CHUYẾN BAY</h3></div>
         <form  method="get"  [formGroup]="search" (ngSubmit)="search1()" >
                                                 
             <div class="row form-group">
                 <div class="col-md-6">
                     
                     <label for="activities">Từ</label>
-                    <select name="#" id="activities" class="form-control" formControlName="maSbayDi">
+                    <select name="#" id="activities" class="form-control selection-width" formControlName="maSbayDi">
                         <ng-container *ngIf="thongtinchuyenbays != null">
                         <option>Chọn</option>
                         <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maSbayDi}}">{{thongtinchuyenbay.tenTinhThanhSanBayDi}}</option>
@@ -34,7 +35,7 @@
             <div class="row form-group">
                 <div class="col-md-6">
                     <label for="activities">Đến</label>
-                    <select name="#" id="activities" class="form-control" formControlName="maSbayDen">
+                    <select name="#" id="activities" class="form-control selection-width" formControlName="maSbayDen">
                         <ng-container >
                         <option value="">Chọn</option>
                         <option *ngFor="let thongtinchuyenbay of thongtinchuyenbays" value="{{thongtinchuyenbay.maSbayDen}}" >{{thongtinchuyenbay.tenTinhThanhSanBayDen}}</option>
@@ -45,7 +46,7 @@
             <div class="row form-group">
                 <div class="col-md-6">
                     <label for="date-start">Ngày khởi hành</label>
-                    <input type="text" id="date-start" class="form-control" formControlName="ngayCatCanh" >
+                    <input type="text" id="date-start" class="form-control selection-width" formControlName="ngayCatCanh" >
                 </div>
             </div>
         
@@ -58,7 +59,7 @@
         
     
             <div class="row form-group">
-                <div class="col-md-6">
+                <div class="col-md-6 btn-center">
                     <input type="submit" class="btn btn-primary btn-block" value="Tìm Kiếm">
                 </div>
             </div>
@@ -66,7 +67,7 @@
         </form>	
     </div>
     
-    <div class="section" >
+    <div class="section-1" >
         <div class="tpd-plan">
           <div class="tp-flight-plan">
             <div class="container-fluid">

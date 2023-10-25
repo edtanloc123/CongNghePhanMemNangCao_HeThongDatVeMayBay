@@ -327,8 +327,26 @@
     font-weight: 500;
 }
 /* TÌM KIẾM */
-
-
+.thongtinchuyenbay-container{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    
+}
+.section-1{
+    width: 60%;
+    margin-top: 2%;
+}
+.container-1{
+    width: 40%;
+    margin-top: 2%;
+}
+.selection-width{
+   width: 450px;
+}
+.btn-center{
+   margin-left: 17%;
+}
 
 
  
