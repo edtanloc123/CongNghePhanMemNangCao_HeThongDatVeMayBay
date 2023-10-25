@@ -40,7 +40,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     SelectButtonModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [
     ConfirmationService,

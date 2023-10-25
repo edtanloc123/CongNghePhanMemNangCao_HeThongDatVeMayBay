@@ -3,9 +3,9 @@ import { Time } from "@angular/common";
 export class ThongTinChuyenBay{
     maCb:string;
     tenCb:string;
-    ngayCatCanh:Date;
+    ngayCatCanh:string;
     gioCatCanh:Time;
-    ngayHaCanh:Date;
+    ngayHaCanh:any;
     gioHaCanh:Time;
     maSbayDi:string;
     maSbayDen:string;
