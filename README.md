@@ -25,22 +25,22 @@
   8.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn                                     ||     12/10/2023
 
 - Sprint 2: 
-  STT ||              Các công việc                      ||     Người thực hiện
-  1.  ||    Đặt vé                                       ||      Trần Tấn Lộc                  
-  2.  ||    Xem thông tin chuyển bay                     ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
-  3.  ||    Xem thông tin cá nhân                        ||      Trần Tấn Lộc
-  4.  ||    Viết feedback                                ||      Trần Đức Hà Sơn
+  STT ||              Các công việc                      ||     Người thực hiện                                   ||     Ngày báo cáo
+  1.  ||    Đặt vé                                       ||      Trần Tấn Lộc                                     ||      02/11/2023
+  2.  ||    Xem thông tin chuyển bay                     ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo             ||      02/11/2023
+  3.  ||    Xem thông tin cá nhân                        ||      Trần Tấn Lộc                                     ||      02/11/2023
+  4.  ||    Viết feedback                                ||      Trần Đức Hà Sơn                                  ||      02/11/2023
 
 
 - Sprint 3:
-  STT ||              Các công việc                   ||     Người thực hiện
-  1.  ||    Quản lý khách hàng                        ||      Trần Tấn Lộc
-  2.  ||    Quản lý chuyến bay                        ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
-  3.  ||    Quản lý giá vé                            ||      Trần Tấn Lộc
-  4.  ||    Quản lý tài khoản nhân viên               ||      Trần Đức Hà Sơn
-  5.  ||    Xử lý đặt vé và thanh toán                ||      Nguyễn Quốc Anh Tiến
-  6.  ||    Quản lý hóa đơn                           ||      Nguyễn Quốc Anh Tiến
-  7.  ||    Quản lý feedback của khách hàng           ||      Phạm Nguyễn Gia Bảo
+  STT ||              Các công việc                   ||     Người thực hiện                                      ||      Ngày báo cáo
+  1.  ||    Quản lý khách hàng                        ||      Trần Tấn Lộc                                        ||      09/11/2023
+  2.  ||    Quản lý chuyến bay                        ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo                ||      09/11/2023
+  3.  ||    Quản lý giá vé                            ||      Trần Tấn Lộc                                        ||      09/11/2023
+  4.  ||    Quản lý tài khoản nhân viên               ||      Trần Đức Hà Sơn                                     ||      09/11/2023
+  5.  ||    Xử lý đặt vé và thanh toán                ||      Nguyễn Quốc Anh Tiến                                ||      09/11/2023
+  6.  ||    Quản lý hóa đơn                           ||      Nguyễn Quốc Anh Tiến                                ||      09/11/2023
+  7.  ||    Quản lý feedback của khách hàng           ||      Phạm Nguyễn Gia Bảo                                 ||      09/11/2023
 
 
   
