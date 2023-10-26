@@ -28,7 +28,7 @@
   STT ||              Các công việc                      ||     Người thực hiện                                   ||     Ngày báo cáo
   1.  ||    Xem trang Đặt vé                             ||      Trần Tấn Lộc                                     ||      02/11/2023
   2.  ||    Xem thông tin chuyển bay                     ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo             ||      02/11/2023
-  3.  ||    Viết feedback                                ||      Trần Đức Hà Sơn                                  ||      02/11/2023
+  3.  ||    Viết liên hệ                                 ||      Trần Đức Hà Sơn                                  ||      02/11/2023
 
 
 - Sprint 3:
