@@ -14,19 +14,19 @@
 - Với sự phát triển lớn mạnh của ngành dịch vụ hàng không, chúng em đã tìm hiểu và chọn đề tài với mục tiêu có thể tạo 1 web bán vé máy bay hoàn chỉnh và bắt mắt nhằm lấy kinh nghiệm bòi đắp cho kỹ năng code, cũng như là có thểm kiến thức cách làm một website đẹp mắt để có thể chuẩn bị cho các kỳ thực tập sắp tới.
 ## Sprint
 - Sprint 1:
-  STT ||              Các công việc                   ||     Người thực hiện
-  1.  ||    Xem trang chủ                             ||      Trần Tấn Lộc
-  2.  ||    Liên hệ & dịch vụ Hỗ trợ khách hàng       ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
-  3.  ||    Xem chuyến bay                            ||      Trần Tấn Lộc
-  4.  ||    Kiểm tra chuyến bay                       ||      Trần Đức Hà Sơn
-  5.  ||    Tìm chuyến bay                            ||      Nguyễn Quốc Anh Tiến
-  6.  ||    Xem trang điểm đến                        ||      Nguyễn Quốc Anh Tiến
-  7.  ||    Xem trang giới thiệu                      ||      Phạm Nguyễn Gia Bảo
-  8.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn
+  STT ||              Các công việc                   ||     Người thực hiện                                      ||     Ngày báo cáo
+  1.  ||    Xem trang chủ                             ||      Trần Tấn Lộc                                        ||     12/10/2023
+  2.  ||    Liên hệ & dịch vụ Hỗ trợ khách hàng       ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo                ||     12/10/2023
+  3.  ||    Xem chuyến bay                            ||      Trần Tấn Lộc                                        ||     12/10/2023
+  4.  ||    Kiểm tra chuyến bay                       ||      Trần Đức Hà Sơn                                     ||     12/10/2023
+  5.  ||    Tìm chuyến bay                            ||      Nguyễn Quốc Anh Tiến                                ||     12/10/2023       
+  6.  ||    Xem trang điểm đến                        ||      Nguyễn Quốc Anh Tiến                                ||     12/10/2023
+  7.  ||    Xem trang giới thiệu                      ||      Phạm Nguyễn Gia Bảo                                 ||     12/10/2023
+  8.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn                                     ||     12/10/2023
 
 - Sprint 2: 
   STT ||              Các công việc                      ||     Người thực hiện
-  1.  ||    Đặt vé                                       ||      Trần Tấn Lộc
+  1.  ||    Đặt vé                                       ||      Trần Tấn Lộc                  
   2.  ||    Xem thông tin chuyển bay                     ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo
   3.  ||    Xem thông tin cá nhân                        ||      Trần Tấn Lộc
   4.  ||    Viết feedback                                ||      Trần Đức Hà Sơn
