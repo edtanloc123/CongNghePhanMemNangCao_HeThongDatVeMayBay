@@ -14,6 +14,6 @@ export class ThongTinChuyenBay{
     MaVe:string;
     GheLoai1:string;
     GheLoai2:string;
-    GiaGheLoai1:number;
+    giaGheLoai1:number;
     GiaGheLoai2:number;
 }

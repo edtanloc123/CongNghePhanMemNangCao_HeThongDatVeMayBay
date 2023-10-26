@@ -74,7 +74,7 @@
      <ng-container *ngFor="let thongtinchuyenbay of thongtinchuyenbays">
                 <div class="crop depart">
                     <div class="context collapsed" data-toggle="collapse" data-target="#demo2">
-                        <a role="button" tabindex="0" class="tog-cal itin-det-btn" href="#">
+                        <a  tabindex="0" class="tog-cal itin-det-btn" [routerLink]="['/chitietdatve',{ maCb: thongtinchuyenbay.maCb }]">
                             Chọn
                         </a>
                         <div class="item it-1">

@@ -15,4 +15,7 @@ export class ThongTinChuyenBayAPIService{
         return await lastValueFrom(this.httpClient.get(this.baseUrlService.getBaseUrl()
         + 'thongtinchuyenbay/search/' + masbaydi + '/' + masbayden+ '/' + ngaycatcanh));
     }
+    async find(maCb:string){
+        return await lastValueFrom(this.httpClient.get(this.baseUrlService.getBaseUrl() + 'thongtinchuyenbay/find'+'/'+ maCb));
+    }
 }

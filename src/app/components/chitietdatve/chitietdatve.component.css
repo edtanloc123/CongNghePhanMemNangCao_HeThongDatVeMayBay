@@ -231,3 +231,9 @@ button{
     margin-bottom: 2%;
     margin-left: 1%;
 }
+.input-thongtin select{
+    width: 90%;
+    height: 50px;
+    margin-left: 4px;
+    border-radius: 10px;
+}
