@@ -55,16 +55,14 @@ export class TrangChuComponent implements OnInit{
     var ngayCatCanh=account.ngayCatCanh.toString();
     var maSbayDi=account.maSbayDi.toString();
     var maSbayDen=account.maSbayDen.toString();
-    this.thongtinchuyenbayAPIService.search(maSbayDi,maSbayDen,ngayCatCanh).then(
-      
-      res=>{
-        this.thongtinchuyenbays=res as ThongTinChuyenBay[];
-        console.log(this.thongtinchuyenbays);
-        this.router.navigate(['/datvemaybay'])
-      },
-      err => {
-          console.log(err);
+        this.router.navigate(['/datvemaybay'], {
+      queryParams: {
+        maSbayDi:maSbayDi,
+        maSbayDen: maSbayDen,
+        ngayCatCanh:ngayCatCanh
       }
-    )
+    });
   }
 }
+
+    

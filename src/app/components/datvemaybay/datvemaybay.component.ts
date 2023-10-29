@@ -13,13 +13,13 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class DatVeMayBayComponent implements OnInit {
   search: FormGroup;
-  maSbayDi:any;
-  maSbayDen:any;
-  ngayCatCanh:any;
+  maSbayDi:string;
+  maSbayDen:string;
+  ngayCatCanh:string;
   constructor(
     private thongtinchuyenbayAPIService:ThongTinChuyenBayAPIService,
     private sanbayAPIService:SanBayAPIService,
-    private activatedRoute : ActivatedRoute,
+    private activatedRoute:ActivatedRoute,
     private router : Router,
     private formBuilder: FormBuilder
 
@@ -53,7 +53,25 @@ export class DatVeMayBayComponent implements OnInit {
     //     { name: 'Option 3', value: 3 }
     // ];
     ngOnInit() {
-     
+      this.activatedRoute.queryParams.subscribe(params => {
+        const maSbayDi = params['maSbayDi'];
+    const maSbayDen = params['maSbayDen'];
+    const ngayCatCanh = params['ngayCatCanh'];
+        console.log(maSbayDi);
+        if(maSbayDi!=null && maSbayDen!=null){
+          this.thongtinchuyenbayAPIService.search(maSbayDi,maSbayDen,ngayCatCanh).then(
+            res => {
+              this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
+              console.log(this.thongtinchuyenbays);
+            },
+            err => {
+                console.log(err);
+            }
+        );
+        }else{
+          
+        }
+    });
       this.thongtinchuyenbayAPIService.findAll().then(
         res => {
             this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
@@ -77,13 +95,13 @@ export class DatVeMayBayComponent implements OnInit {
       console.log(new Date(this.string));
   
       this.dateSelected = this.todayDate1;
-  
+     
       this.search=this.formBuilder.group({
         maSbayDi:'',
         maSbayDen:'',
         ngayCatCanh:''
     });
- 
+   
    
    
 }
@@ -91,13 +109,16 @@ search1(){
   var account:ThongTinChuyenBay =this.search.value as ThongTinChuyenBay;
     console.log(account);
     var ngayCatCanh=account.ngayCatCanh.toString();
-  this.thongtinchuyenbayAPIService.search(account.maSbayDi,account.maSbayDen,ngayCatCanh).then(
-    res=>{
-      this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
-    },err=>{
-        console.log(err);
-    }
-)
+    if(account!=null){
+      this.thongtinchuyenbayAPIService.search(account.maSbayDi,account.maSbayDen,ngayCatCanh).then(
+        res=>{
+          this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
+        },err=>{
+            console.log(err);
+        }
+    )
+      }
+ 
   // this.thongtinchuyenbayAPIService.search(maSbayDi,maSbayDen,ngayCatCanh).then(
   //   res=>{
   //     this.thongtinchuyenbays=res as ThongTinChuyenBay[];

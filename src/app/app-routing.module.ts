@@ -42,6 +42,9 @@ const routes: Routes = [
   {
     path:'chitietdatve',
     component: ChiTietDatVeComponent,
+  },
+  {
+    path: 'datvemaybay/:maSbayDi/:maSbayDen/ngayCatCanh', component: ChiTietDatVeComponent 
   }
 ];
 

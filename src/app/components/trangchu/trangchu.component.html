@@ -17,7 +17,7 @@
                                     <div class="tab-content-inner active" data-content="signup">
                                         <h3>Tìm kiếm chuyến bay</h3>
                                         
-                                        <form method="get"  [formGroup]="search" (click)="search1()">
+                                        <form method="get"  [formGroup]="search" >
                                             
                                             <div class="row form-group">
                                                 <div class="col-md-12">
@@ -61,7 +61,8 @@
 
                                             <div class="row form-group">
                                                 <div class="col-md-12">
-                                                    <input type="submit" class="btn btn-primary btn-block" value="Tìm Kiếm">
+                                                    <input type="submit" class="btn btn-primary btn-block" value="Tìm Kiếm" (click)="search1()"  >
+                                                
                                                 </div>
                                             </div>
                                        
@@ -181,7 +182,8 @@
     </div>
 </div>
 
-<div id="gtco-features"  style="   background-image: url('assets/images/z4781184349966_60a37187e4a8489a3570e1aa6c4642ab.jpg');">
+<!-- <div id="gtco-features"  style="   background-image: url('assets/images/z4781184349966_60a37187e4a8489a3570e1aa6c4642ab.jpg');"> -->
+    <div id="gtco-features"  style="background-color: #09C6AB;">
     <div class="gtco-container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
@@ -192,7 +194,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-6">
                 <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                    <span class="icon">
+                    <span class="icon" style="background-color: white;">
                         <i>1</i>
                     </span>
                     <h3>Hãy Khám Phá Thế Giới, Chúng Tôi Sẽ Đưa Bạn Đến Đó</h3>
@@ -201,7 +203,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                    <span class="icon">
+                    <span class="icon" style="background-color: white;">
                         <i>2</i>
                     </span>
                     <h3>Luôn Cập Nhật, Luôn Đáng Tin Cậy</h3>
@@ -210,7 +212,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                    <span class="icon">
+                    <span class="icon" style="background-color: white;">
                         <i>3</i>
                     </span>
                     <h3>Công Nghệ Hiện Đại Cho Cuộc Sống Hiện Đại</h3>
