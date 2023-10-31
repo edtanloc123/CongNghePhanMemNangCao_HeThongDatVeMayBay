@@ -18,7 +18,7 @@
     <div class="left">
         <form>
             <div>
-                <h2 align="center" style="margin-top: 5px;">THÔNG TIN CƠ BẢN</h2>
+                <h2 align="center" style="margin-top: 5px; color: white;">THÔNG TIN CƠ BẢN</h2>
                 <div class="ThongTinCoBan">
                     <div class="flex">
                         <div class="label-text"><label>Họ và Tên</label></div>
@@ -45,11 +45,12 @@
                             </select>
                         </div>
                     </div>
+                    <div class="btn-thanhtoan btn-thanhtoan-1"><button><p>Xác nhận</p></button></div>
                 </div>
             </div>
         </form>
     </div>
-    <div class="right" style="flex: 0.4">
+    <div class="right" style="flex: 0.5">
        
         <form  method="get" >
             <ng-container *ngFor="let thongtinchuyenbay of thongtinchuyenbays">
@@ -59,28 +60,28 @@
                   
                     <div class="thong-tin-cat-canh">
                         <div class="thong-tin-thoi-gian">
-                            <div><h3>Giờ đi</h3></div>
-                            <div class="center-text"><p>{{this.thongtinchuyenbay.gioCatCanh}}</p></div>
+                            <div class="cachdong"><h3>Giờ đi</h3></div>
+                            <div class="center-text bold"><h4>{{this.thongtinchuyenbay.gioCatCanh}}</h4></div>
                         </div>
                         <div class="thong-tin-dia-chi">
                             <div><h3>Địa điểm</h3></div>
-                            <div class="center-text" ><p>{{thongtinchuyenbay.maSbayDi}}</p></div>
-                            <div class="center-text"><p>{{thongtinchuyenbay.tenTinhThanhSanBayDi}}</p></div>
+                            <!-- <div class="center-text bold" ><h4>{{thongtinchuyenbay.maSbayDi}}</h4></div> -->
+                            <div class="center-text bold"><h4>{{thongtinchuyenbay.tenTinhThanhSanBayDi}}</h4></div>
                         </div>
                     </div>
                     <div class="icon-may-bay center-item"><img src="assets/images/icon-may-bay.png" alt=""></div>
                     <div class="thong-tin-ha-canh">
                         <div>
-                            <div><h3>Giờ đến</h3></div>
-                            <div class="center-text"><p>{{thongtinchuyenbay.gioHaCanh}}</p></div>
+                            <div class="cachdong"><h3>Giờ đến</h3></div>
+                            <div class="center-text bold"><h4>{{thongtinchuyenbay.gioHaCanh}}</h4></div>
                         </div>
                         <div>
                             <div><h3>Địa Điểm</h3></div>
-                            <div class="center-text"><p>{{thongtinchuyenbay.maSbayDen}}</p></div>
-                            <div class="center-text"><p>{{thongtinchuyenbay.tenTinhThanhSanBayDen}}</p></div>
+                            <!-- <div class="center-text bold"><h4>{{thongtinchuyenbay.maSbayDen}}</h4></div> -->
+                            <div class="center-text bold"><h4>{{thongtinchuyenbay.tenTinhThanhSanBayDen}}</h4></div>
                         </div>
                     </div>
-             
+                    
                 </div>
             </div>
             <div style="border: solid; border-width: thin">

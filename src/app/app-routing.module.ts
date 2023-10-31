@@ -7,45 +7,11 @@ import { DangKyComponent } from './components/dangky/dangky.component';
 import { LienHeComponent } from './components/lienhe/lienhe.component';
 import { DatVeMayBayComponent } from './components/datvemaybay/datvemaybay.component';
 import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.component';
+import { DashBoardComponent } from './components/admin/dashboard.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: TrangChuComponent,
-   
-  },
-  {
-    path: 'trangchu',
-    component: TrangChuComponent,
-   
-  },
-  {
-    path:'thongtinhanhchinh',
-    component: ThongTinHanhChinhComponent,
-  },
-  {
-    path:'dangnhap',
-    component: DangNhapComponent,
-  },
-  {
-    path:'dangky',
-    component: DangKyComponent,
-  },
-  {
-    path:'lienhe',
-    component: LienHeComponent,
-  },
-  {
-    path:'datvemaybay',
-    component: DatVeMayBayComponent,
-  },
-  {
-    path:'chitietdatve',
-    component: ChiTietDatVeComponent,
-  },
-  {
-    path: 'datvemaybay/:maSbayDi/:maSbayDen/ngayCatCanh', component: ChiTietDatVeComponent 
-  }
+
+
 ];
 
 @NgModule({

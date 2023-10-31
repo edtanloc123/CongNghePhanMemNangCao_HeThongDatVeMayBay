@@ -22,6 +22,12 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.component';
 import { FormLienHeAPIService } from './services/formlienheAPI.service';
+import { DashBoardComponent } from './components/admin/dashboard.component';
+import { ClientRoutingModule } from './client-routing.module';
+import { AdminRoutingModule } from './admin-routing.module';
+import { TrangChinhComponent } from './components/user/trangchinh.component';
+import { TrangChuAdminComponent } from './components/trangchuadmin/trangchuadmin.component';
+import { TableModule } from 'primeng/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +37,10 @@ import { FormLienHeAPIService } from './services/formlienheAPI.service';
     DangKyComponent,
     LienHeComponent,
     DatVeMayBayComponent,
-    ChiTietDatVeComponent
+    ChiTietDatVeComponent,
+    DashBoardComponent,
+    TrangChinhComponent,
+    TrangChuAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +53,10 @@ import { FormLienHeAPIService } from './services/formlienheAPI.service';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ClientRoutingModule,
+    AdminRoutingModule,
+    TableModule
   ],
   providers: [
     ConfirmationService,
