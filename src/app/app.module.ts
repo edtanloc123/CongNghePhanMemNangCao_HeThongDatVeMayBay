@@ -28,6 +28,8 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { TrangChinhComponent } from './components/user/trangchinh.component';
 import { TrangChuAdminComponent } from './components/trangchuadmin/trangchuadmin.component';
 import { TableModule } from 'primeng/table';
+import { HanhKhachAPIService } from './services/hanhkhachAPI.service';
+import { DataService } from './services/dataservice';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +66,9 @@ import { TableModule } from 'primeng/table';
     BaseUrlService,
     ThongTinChuyenBayAPIService,
     SanBayAPIService,
-    FormLienHeAPIService
+    FormLienHeAPIService,
+    HanhKhachAPIService,
+    DataService
 
   ],
   bootstrap: [AppComponent]

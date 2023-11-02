@@ -1,4 +1,42 @@
-
+<nav class="gtco-nav" role="navigation" >
+    <div class="gtco-container">
+        
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <div id="gtco-logo"><a [routerLink]="['/trangchu']">SKYHIGH <em>.</em></a></div>
+            </div>
+            <div class="col-xs-8 text-right menu-1">
+                <ul>
+                    <li><a [routerLink]="['/thongtinhanhchinh']">Thông Tin Hành Trình</a></li>
+                    <li class="has-dropdown">
+                        <a  [routerLink]="['/datvemaybay']">Đặt Vé</a>
+                        <!-- <ul class="dropdown">
+                            <li><a href="#">Europe</a></li>
+                            <li><a href="#">Asia</a></li>
+                            <li><a href="#">America</a></li>
+                            <li><a href="#">Canada</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a [routerLink]="['/lienhe']">Liên hệ</a></li>
+            
+                    <li class="has-dropdown"  >
+                        <a  >Tài Khoản</a>
+                    
+                        <ul class="dropdown">
+                            <li><a [routerLink]="['/dangnhap']">Đăng nhập</a></li>
+                            <li><a [routerLink]="['/dangky']">Đăng ký</a></li>
+                            <li><a href="#">Trợ giúp</a></li>
+                    
+                        </ul>
+                    </li>	
+                    
+                    
+                </ul>	
+            </div>
+        </div>
+        
+    </div>
+</nav>
 <header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(assets/images/hinh-anh-may-bay.jpg)">
     <div class="overlay"></div>
     <div class="gtco-container">

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SanBay } from 'src/app/models/sanbay.model';
 import { ThongTinChuyenBay } from 'src/app/models/thongtinchuyenbay.model';
+import { DataService } from 'src/app/services/dataservice';
+import { HanhKhachAPIService } from 'src/app/services/hanhkhachAPI.service';
 import { SanBayAPIService } from 'src/app/services/sanbayAPI.service';
 import { ThongTinChuyenBayAPIService } from 'src/app/services/thongtinchuyenbayAPI.service';
 @Component({
@@ -18,12 +20,20 @@ export class TrangChuComponent implements OnInit{
     private thongtinchuyenbayAPIService:ThongTinChuyenBayAPIService,
     private sanbayAPIService:SanBayAPIService,
     private formBuilder: FormBuilder,
+    private activatedRoute : ActivatedRoute,
+    private hanhkhachService:HanhKhachAPIService,
+    private dataService: DataService,
     private router : Router
   ){}
   thongtinchuyenbays:ThongTinChuyenBay[];
   sanbays:SanBay[];
+  taikhoan:String;
   ngOnInit(){
-    
+    this.activatedRoute.paramMap.subscribe(params => {
+      this.taikhoan=params.get('taikhoan');
+      var taikhoan= this.taikhoan.toString();
+      
+  });
     this.thongtinchuyenbayAPIService.findAll().then(
       res => {
           this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
