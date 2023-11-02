@@ -1,5 +1,5 @@
 <p align="center" width="300">
-   <img align="center" width="200" src="![Imgur](https://i.imgur.com/ELJ3zZk.png)" />
+   <img align="center" width="200" src="(https://github.com/edtanloc123/Nhom1_T5_Ca3_CongNghePhanMemNangCao_HeThongDatVeMayBay/assets/115057593/d2e2122d-b69e-4c85-adb8-922bee675d35)" />
    <h3 align="center">Dự án Bán Vé Máy Bay của nhóm 1</h3>
 </p>
 
