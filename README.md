@@ -1,5 +1,5 @@
 <p align="center" width="300">
-   <img align="center" width="200" src="![skyhighlogo](https://github.com/edtanloc123/Nhom1_T5_Ca3_CongNghePhanMemNangCao_HeThongDatVeMayBay/assets/115057593/77ace7ea-3c68-4afd-a8a8-2a70c1095b22)" />
+   <img align="center" width="200" src="![skyhighlogo](https://github.com/edtanloc123/Nhom1_T5_Ca3_CongNghePhanMemNangCao_HeThongDatVeMayBay/assets/115057593/0c216489-c711-481d-9e43-5af983ba0515)" />
    <h3 align="center">Dự án Bán Vé Máy Bay của nhóm 1</h3>
 </p>
 
