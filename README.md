@@ -33,7 +33,7 @@
   1.  ||    Xem trang chi tiết chuyến bay             ||      Trần Tấn Lộc                                        ||     02/11/2023
   2.  ||    Xem và tìm thông tin chuyển bay           ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo                ||     02/11/2023
   3.  ||    Viết liên hệ                              ||      Trần Đức Hà Sơn                                     ||     02/11/2023
-  4.  ||    Đăng ký, Đăng nhập                        ||      Nguyễn Quốc Anh Tiến                                ||     02/11/2023
+  4.  ||    Đăng ký                                   ||      Nguyễn Quốc Anh Tiến                                ||     02/11/2023
   5.  ||    Đăng nhập                                 ||      Nguyễn Quốc Anh Tiến                                ||     02/11/2023
 <img src="src/assets/images/z4841438193867_37fe88b6040262d7aff237cb89a9a0ea.jpg" align="center"/>
 
