@@ -30,6 +30,8 @@ import { TrangChuAdminComponent } from './components/trangchuadmin/trangchuadmin
 import { TableModule } from 'primeng/table';
 import { HanhKhachAPIService } from './services/hanhkhachAPI.service';
 import { DataService } from './services/dataservice';
+import { VeAPIService } from './services/ve.service';
+import { VeComponent } from './components/ve/ve.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,8 @@ import { DataService } from './services/dataservice';
     ChiTietDatVeComponent,
     DashBoardComponent,
     TrangChinhComponent,
-    TrangChuAdminComponent
+    TrangChuAdminComponent,
+    VeComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +71,8 @@ import { DataService } from './services/dataservice';
     SanBayAPIService,
     FormLienHeAPIService,
     HanhKhachAPIService,
-    DataService
+    DataService,
+    VeAPIService
 
   ],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { FormlienheAPI } from 'src/app/models/formlienhe.model';
 import { FormLienHeAPIService } from 'src/app/services/formlienheAPI.service';
@@ -10,13 +10,21 @@ import { FormLienHeAPIService } from 'src/app/services/formlienheAPI.service';
 })
 export class LienHeComponent implements OnInit {
   FeedbackForm: FormGroup;
+  taikhoan:String;
   constructor(
     private formBuilder : FormBuilder,
     private formlienheAPIService:FormLienHeAPIService,
     private messageService : MessageService,
-    private router : Router
+    private router : Router,
+    private activatedRoute:ActivatedRoute,
+  
   ){}
   ngOnInit(){
+    this.activatedRoute.paramMap.subscribe(params => {
+      this.taikhoan=params.get('taikhoan');
+  
+      
+  });
     this.FeedbackForm = this.formBuilder.group({
       hoTen:'',
       tieuDe:'',

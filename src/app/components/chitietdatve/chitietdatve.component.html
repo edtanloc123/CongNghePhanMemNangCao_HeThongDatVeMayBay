@@ -3,13 +3,19 @@
         
         <div class="row">
             <div class="col-sm-4 col-xs-12">
-                <div id="gtco-logo"><a [routerLink]="['/trangchu']">SKYHIGH <em>.</em></a></div>
+                <div id="gtco-logo"><a *ngIf="taikhoan!=null" [routerLink]="['/trangchu',{taikhoan:taikhoan}]">SKYHIGH <em>.</em></a>
+                    <a *ngIf="taikhoan==null" [routerLink]="['/trangchu']">SKYHIGH <em>.</em></a>
+                </div>
             </div>
             <div class="col-xs-8 text-right menu-1">
                 <ul>
-                    <li><a [routerLink]="['/thongtinhanhchinh']">Thông Tin Hành Trình</a></li>
+                    <li><a *ngIf="taikhoan!=null" [routerLink]="['/thongtinhanhchinh',{taikhoan:taikhoan}]">Thông Tin Hành Trình</a>
+                        <a *ngIf="taikhoan==null" [routerLink]="['/thongtinhanhchinh']">Thông Tin Hành Trình</a>
+                    </li>
+                    
                     <li class="has-dropdown">
-                        <a  [routerLink]="['/datvemaybay']">Đặt Vé</a>
+                        <a  *ngIf="taikhoan!=null" [routerLink]="['/datvemaybay',{taikhoan:taikhoan}]">Đặt Vé</a>
+                        <a  *ngIf="taikhoan==null" [routerLink]="['/datvemaybay']">Đặt Vé</a>
                         <!-- <ul class="dropdown">
                             <li><a href="#">Europe</a></li>
                             <li><a href="#">Asia</a></li>
@@ -17,17 +23,19 @@
                             <li><a href="#">Canada</a></li>
                         </ul> -->
                     </li>
-                    <li><a [routerLink]="['/lienhe']">Liên hệ</a></li>
+                    <li><a *ngIf="taikhoan!=null" [routerLink]="['/lienhe',{taikhoan:taikhoan}]">Liên hệ</a>
+                        <a *ngIf="taikhoan==null" [routerLink]="['/lienhe']">Liên hệ</a>
+                    </li>
             
                     <li class="has-dropdown"  >
-                        <a  >Tài Khoản</a>
-                    
-                        <ul class="dropdown">
-                            <li><a [routerLink]="['/dangnhap']">Đăng nhập</a></li>
+                        <a *ngIf="taikhoan==null" [routerLink]="['/dangnhap']">Đăng nhập</a>
+                        <a *ngIf="taikhoan!=null" ><b>Xin chào {{taikhoan}}</b></a>
+                        <!-- <ul class="dropdown">
+                            <li><a ></a></li>
                             <li><a [routerLink]="['/dangky']">Đăng ký</a></li>
                             <li><a href="#">Trợ giúp</a></li>
                     
-                        </ul>
+                        </ul> -->
                     </li>	
                     
                     
@@ -54,44 +62,86 @@
 </header>
 
 <div class="container">
-    <div class="left">
-        <form>
+    <div class="left" *ngIf="taikhoan==null">
+        <form > 
+        <div>
+                <h2 align="center" style="margin-top: 5px; color: white;">THÔNG TIN CƠ BẢN</h2>
+                <div class="ThongTinCoBan">
+                    <div class="flex">
+                        <div class="label-text"><label>Họ và Tên</label></div>
+                        <div class="input-thongtin"><input type="text"  placeholder=""   readonly oncopy="return false;" /></div>
+                    </div>  
+                    <div class="flex">
+                        <div class="label-text"><label for="ngaysinh">Ngày sinh</label></div>
+                        <div class="input-thongtin"> <input type="text"  placeholder=""  readonly oncopy="return false;"/></div>
+                    </div>
+                    <div class="flex">
+                        <div class="label-text"><label for="">Số điện thoại</label></div>
+                        <div class="input-thongtin"><input type="text" placeholder=""  readonly oncopy="return false;"></div>
+                    </div>
+                    <!-- <div class="flex">
+                        <div class="label-text"><label for="">Email</label></div>
+                        <div class="input-thongtin"><input type="text" placeholder="Nhập Email..."></div>
+                    </div> -->
+                    <div class="flex">
+                        <div class="label-text"><label for="">Hạng ghế</label></div>
+                        <div class="input-thongtin">
+                            <select name="" id="" class="selection-width" (change)="onSelectionChange($event)" >
+                                <option value="2000000">Thương gia</option>
+                                <option value="1000000">Phổ thông</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- <div class="btn-thanhtoan btn-thanhtoan-1"><button><p>Xác nhận</p></button></div> -->
+                </div>
+            </div>
+        </form>
+ 
+    </div>
+    
+    <div class="left" *ngIf="taikhoan!=null">
+        <ng-container *ngFor="let hanhkhach of hanhkhachs">
+        <form >
+             
             <div>
                 <h2 align="center" style="margin-top: 5px; color: white;">THÔNG TIN CƠ BẢN</h2>
                 <div class="ThongTinCoBan">
                     <div class="flex">
                         <div class="label-text"><label>Họ và Tên</label></div>
-                        <div class="input-thongtin"><input type="text" placeholder="Nhập tên..."></div>
+                        <div class="input-thongtin"><input type="text"  placeholder="{{hanhkhach.tenKhachHang}}" readonly oncopy="return false;"  /></div>
                     </div>  
                     <div class="flex">
                         <div class="label-text"><label for="ngaysinh">Ngày sinh</label></div>
-                        <div class="input-thongtin"> <input type="date" id="ngaysinh" value="Chọn ngày sinh..."></div>
+                        <div class="input-thongtin"> <input type="text"  placeholder="{{hanhkhach.ngaySinh}}" readonly oncopy="return false;"  /></div>
                     </div>
                     <div class="flex">
                         <div class="label-text"><label for="">Số điện thoại</label></div>
-                        <div class="input-thongtin"><input type="text" placeholder="Nhập số điện thoại..."></div>
+                        <div class="input-thongtin"><input type="text" placeholder="{{hanhkhach.soDienThoai}}" readonly oncopy="return false;" ></div>
                     </div>
-                    <div class="flex">
+                    <!-- <div class="flex">
                         <div class="label-text"><label for="">Email</label></div>
                         <div class="input-thongtin"><input type="text" placeholder="Nhập Email..."></div>
-                    </div>
+                    </div> -->
                     <div class="flex">
                         <div class="label-text"><label for="">Hạng ghế</label></div>
                         <div class="input-thongtin">
-                            <select name="" id="" class="selection-width">
-                                <option value="">Thương gia</option>
-                                <option value="">Phổ thông</option>
+                            <select name="" id="" class="selection-width" (change)="onSelectionChange($event)">
+                                <option value="">Chọn</option>
+                                <option value="2000000">Thương gia</option>
+                                <option value="1000000">Phổ thông</option>
                             </select>
                         </div>
                     </div>
-                    <div class="btn-thanhtoan btn-thanhtoan-1"><button><p>Xác nhận</p></button></div>
+                    <!-- <div class="btn-thanhtoan btn-thanhtoan-1"><button><p>Xác nhận</p></button></div> -->
                 </div>
             </div>
         </form>
+    </ng-container>
     </div>
+
     <div class="right" style="flex: 0.5">
        
-        <form  method="get" >
+        <form  method="post" (ngSubmit)="save()">
             <ng-container *ngFor="let thongtinchuyenbay of thongtinchuyenbays">
             <h3>CHI TIẾT CHUYẾN BAY</h3>
             <div class="content-thongtinchuyenbay">
@@ -100,12 +150,12 @@
                     <div class="thong-tin-cat-canh">
                         <div class="thong-tin-thoi-gian">
                             <div class="cachdong"><h3>Giờ đi</h3></div>
-                            <div class="center-text bold"><h4>{{this.thongtinchuyenbay.gioCatCanh}}</h4></div>
+                            <div class="center-text bold"><h4 >{{this.thongtinchuyenbay.gioCatCanh}}</h4></div>
                         </div>
                         <div class="thong-tin-dia-chi">
                             <div><h3>Địa điểm</h3></div>
                             <!-- <div class="center-text bold" ><h4>{{thongtinchuyenbay.maSbayDi}}</h4></div> -->
-                            <div class="center-text bold"><h4>{{thongtinchuyenbay.tenTinhThanhSanBayDi}}</h4></div>
+                            <div class="center-text bold"><h4 >{{thongtinchuyenbay.tenTinhThanhSanBayDi}}</h4></div>
                         </div>
                     </div>
                     <div class="icon-may-bay center-item"><img src="assets/images/icon-may-bay.png" alt=""></div>
@@ -131,18 +181,20 @@
             <div style="border:solid;border-width:thin">
                 <div style="padding:10px">
                     <label>Thuế và các khoản thu:</label>
-                    <label style="float:right">{{thongtinchuyenbay.giaGheLoai1}}</label>
+                    <label style="float:right"><input type="text" value="{{this.newValue}}" readonly oncopy="return false;" ></label>
                 </div>
             </div>
             <div style="border:solid;border-width:thin">
                 <div style="padding:10px">
                     <label style="font-size:18px">Tổng số tiền:</label>
-                    <label style="float:right">{{thongtinchuyenbay.giaGheLoai1}}</label>
+                    <label style="float:right" ><input type="text" value="{{this.newValue}}" readonly oncopy="return false;" ></label>
                 </div>
             </div>
             <div class="flex combo-submit">
                 <div class="btn-quayve"><a href=""><div class="btn-submit-quayve center-text-1"><p>Quay về</p></div></a></div>
-                <div class="btn-thanhtoan"><a href=""><div class="btn-submit-thanhtoan center-text-1"><p>Thanh toán</p></div></a></div>
+                <div class="btn-thanhtoan">
+                    <input type="submit" class='btn-login' value="Thanh toán"  class="btn-submit-thanhtoan center-text-1" style="color:white;">
+                </div>
             </div>
         </ng-container>
         </form>
@@ -150,3 +202,4 @@
     </div>
 
 </div>  
+<p-toast></p-toast>

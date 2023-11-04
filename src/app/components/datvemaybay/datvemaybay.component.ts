@@ -12,6 +12,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./datvemaybay.component.css']
 })
 export class DatVeMayBayComponent implements OnInit {
+  taikhoan:String;
+  taikhoan1:String;
   search: FormGroup;
   maSbayDi:string;
   maSbayDen:string;
@@ -53,12 +55,17 @@ export class DatVeMayBayComponent implements OnInit {
     //     { name: 'Option 3', value: 3 }
     // ];
     ngOnInit() {
+      this.activatedRoute.paramMap.subscribe(params => {
+        this.taikhoan=params.get('taikhoan');
+       
+        
+    });
       this.activatedRoute.queryParams.subscribe(params => {
         const maSbayDi = params['maSbayDi'];
-    const maSbayDen = params['maSbayDen'];
-    const ngayCatCanh = params['ngayCatCanh'];
+     const maSbayDen = params['maSbayDen'];
+     const ngayCatCanh = params['ngayCatCanh'];
         console.log(maSbayDi);
-        if(maSbayDi!=null && maSbayDen!=null){
+        if(maSbayDi!=null && maSbayDen!=null && ngayCatCanh!=null){
           this.thongtinchuyenbayAPIService.search(maSbayDi,maSbayDen,ngayCatCanh).then(
             res => {
               this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 

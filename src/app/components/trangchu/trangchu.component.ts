@@ -29,11 +29,7 @@ export class TrangChuComponent implements OnInit{
   sanbays:SanBay[];
   taikhoan:String;
   ngOnInit(){
-    this.activatedRoute.paramMap.subscribe(params => {
-      this.taikhoan=params.get('taikhoan');
-      var taikhoan= this.taikhoan.toString();
-      
-  });
+  
     this.thongtinchuyenbayAPIService.findAll().then(
       res => {
           this.thongtinchuyenbays = res as ThongTinChuyenBay[]; 
@@ -58,20 +54,29 @@ export class TrangChuComponent implements OnInit{
       maSbayDen: '',
       ngayCatCanh:''
     });
+    this.activatedRoute.paramMap.subscribe(params => {
+      this.taikhoan=params.get('taikhoan');
+      // var taikhoan= this.taikhoan.toString();
+      
+  });
   }
   search1(){
     var account:ThongTinChuyenBay =this.search.value as ThongTinChuyenBay;
     console.log(account);
-    var ngayCatCanh=account.ngayCatCanh.toString();
-    var maSbayDi=account.maSbayDi.toString();
-    var maSbayDen=account.maSbayDen.toString();
-        this.router.navigate(['/datvemaybay'], {
-      queryParams: {
-        maSbayDi:maSbayDi,
-        maSbayDen: maSbayDen,
-        ngayCatCanh:ngayCatCanh
-      }
-    });
+
+      var ngayCatCanh=account.ngayCatCanh.toString();
+      var maSbayDi=account.maSbayDi.toString();
+      var maSbayDen=account.maSbayDen.toString();
+          this.router.navigate(['/datvemaybay'], {
+        queryParams: {
+          taikhoan:this.taikhoan,
+          maSbayDi:maSbayDi,
+          maSbayDen: maSbayDen,
+          ngayCatCanh:ngayCatCanh
+        }
+      });
+  
+   
   }
 }
 
