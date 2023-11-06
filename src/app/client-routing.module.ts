@@ -9,6 +9,7 @@ import { DatVeMayBayComponent } from './components/datvemaybay/datvemaybay.compo
 import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.component';
 import { DashBoardComponent } from './components/admin/dashboard.component';
 import { TrangChinhComponent } from './components/user/trangchinh.component';
+import { VeComponent } from './components/ve/ve.component';
 
 const routes: Routes = [
     {
@@ -52,6 +53,10 @@ const routes: Routes = [
               {
                 path: 'datvemaybay/:maSbayDi/:maSbayDen/ngayCatCanh', component: ChiTietDatVeComponent 
               },
+              {
+                path:'ve',
+                component: VeComponent,
+              }
             
         ]
     }
