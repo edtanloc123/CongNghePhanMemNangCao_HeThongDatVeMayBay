@@ -41,11 +41,11 @@
 
 ## - Sprint 3:
   STT ||              Các công việc                   ||     Người thực hiện                                      ||      Ngày báo cáo
-  1.  ||    Quản lý khách hàng                        ||      Trần Tấn Lộc                                        ||      09/11/2023
+  1.  ||    Xem danh sách khách hàng                  ||      Trần Tấn Lộc                                        ||      09/11/2023
   2.  ||    Quản lý chuyến bay                        ||      Trần Đức Hà Sơn, Phạm Nguyễn Gia Bảo                ||      09/11/2023
-  3.  ||    Quản lý giá vé                            ||      Trần Tấn Lộc                                        ||      09/11/2023
-  4.  ||    Quản lý tài khoản nhân viên               ||      Trần Đức Hà Sơn                                     ||      09/11/2023
-  5.  ||    Xử lý đặt vé và thanh toán                ||      Nguyễn Quốc Anh Tiến                                ||      09/11/2023
+  3.  ||    Xem danh sách vé                          ||      Trần Tấn Lộc                                        ||      09/11/2023
+  4.  ||    Xem danh sách nhân viên                   ||      Trần Đức Hà Sơn                                     ||      09/11/2023
+  5.  ||    Xử lý đặt vé và thanh toán bằng PayPal    ||      Nguyễn Quốc Anh Tiến                                ||      09/11/2023
   6.  ||    Quản lý hóa đơn                           ||      Nguyễn Quốc Anh Tiến                                ||      09/11/2023
   7.  ||    Quản lý feedback của khách hàng           ||      Phạm Nguyễn Gia Bảo                                 ||      09/11/2023
 
