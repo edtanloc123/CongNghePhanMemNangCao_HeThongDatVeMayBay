@@ -3,7 +3,8 @@ import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  templateUrl: './thongtincanhan.component.html'
+  templateUrl: './thongtincanhan.component.html',
+  styleUrls: ['./thongtincanhan.component.html']
 
 })
 export class ThongTinCaNhanComponent implements OnInit {

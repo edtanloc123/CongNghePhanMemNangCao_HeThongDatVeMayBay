@@ -3,8 +3,8 @@ import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  templateUrl: './editthongtincanhan.component.html'
-
+  templateUrl: './editthongtincanhan.component.html',
+  styleUrls: ['./editthongtincanhan.component.html']
 })
 export class EditThongTinCaNhanComponent implements OnInit {
     taikhoan:String;
