@@ -9,7 +9,7 @@
             </div>
             <div class="col-xs-8 text-right menu-1">
                 <ul>
-                    <li><a *ngIf="taikhoan!=null" [routerLink]="['/thongtinhanhchinh',{taikhoan:taikhoan}]">Thông Tin Hành Trình</a>
+                    <li><a *ngIf="taikhoan!=null" [routerLink]="['/ve',{taikhoan:taikhoan}]">Xem Vé</a>
                         <a *ngIf="taikhoan==null" [routerLink]="['/thongtinhanhchinh']">Thông Tin Hành Trình</a>
                     </li>
                     
@@ -127,8 +127,8 @@
                         <div class="input-thongtin">
                             <select name="" id="" class="selection-width" (change)="onSelectionChange($event)">
                                 <option value="">Chọn</option>
-                                <option value="2000000">Thương gia</option>
-                                <option value="1000000">Phổ thông</option>
+                                <option value="20">Thương gia</option>
+                                <option value="10">Phổ thông</option>
                             </select>
                         </div>
                     </div>
@@ -175,7 +175,8 @@
             </div>
             <div style="border: solid; border-width: thin">
                 <div style="padding:10px">
-                    <label>Dịch vụ bổ trợ</label>
+                    <label>Số lượng</label>
+                    <label style="float:right"><input type="number" [(ngModel)]="value" name="value"></label>
                 </div>
             </div>
             <div style="border:solid;border-width:thin">

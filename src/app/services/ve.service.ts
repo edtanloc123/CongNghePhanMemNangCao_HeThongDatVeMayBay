@@ -12,4 +12,7 @@ export class VeAPIService{
     async create(ve : VeAPI){
         return await lastValueFrom(this.httpClient.post(this.baseUrlService.getBaseUrl() + 've/create', ve));
     }
+    async find1(maHk:number) {
+        return await lastValueFrom(this.httpClient.get(this.baseUrlService.getBaseUrl() + 've/find1/' +maHk));
+    }
 }

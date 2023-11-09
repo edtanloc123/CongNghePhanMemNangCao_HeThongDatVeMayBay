@@ -32,6 +32,10 @@ import { HanhKhachAPIService } from './services/hanhkhachAPI.service';
 import { DataService } from './services/dataservice';
 import { VeAPIService } from './services/ve.service';
 import { VeComponent } from './components/ve/ve.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { PaymentSuccessComponent } from './components/paymentsuccess/paymentsuccess.component';
+import { ThongTinCaNhanComponent } from './components/thongtincanhan/thongtincanhan.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +49,10 @@ import { VeComponent } from './components/ve/ve.component';
     DashBoardComponent,
     TrangChinhComponent,
     TrangChuAdminComponent,
-    VeComponent
+    VeComponent,
+    PaymentComponent,
+    PaymentSuccessComponent,
+    ThongTinCaNhanComponent
   ],
   imports: [
     BrowserModule,

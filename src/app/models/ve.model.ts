@@ -1,9 +1,10 @@
 export class VeAPI {
-    constructor( thoiGianDat: string, thoiGianDi: string, loaiGhe: string, giaGhe: number, maCb:string,maHk:number) {
+    constructor( thoiGianDat: string, thoiGianDi: string, loaiGhe: string, giaGhe: number,soLuong:number, maCb:string,maHk:number) {
         this.thoiGianDat = thoiGianDat;
         this.thoiGianDi = thoiGianDi;
         this.loaiGhe = loaiGhe;
         this.giaGhe = giaGhe;
+        this.soLuong=soLuong;
         this.maCb = maCb;
         this.maHk = maHk;
       }
@@ -12,6 +13,7 @@ export class VeAPI {
     thoiGianDi:string;
     loaiGhe:string;
     giaGhe:number;
+    soLuong:number;
     maCb:string;
     maHk:number;
 }

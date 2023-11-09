@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-xs-8 text-right menu-1">
                     <ul>
-                        <li><a *ngIf="taikhoan!=null" [routerLink]="['/thongtinhanhchinh',{taikhoan:taikhoan}]">Thông Tin Hành Trình</a>
+                        <li><a *ngIf="taikhoan!=null" [routerLink]="['/ve',{taikhoan:taikhoan}]">Xem Vé</a>
                             <a *ngIf="taikhoan==null" [routerLink]="['/thongtinhanhchinh']">Thông Tin Hành Trình</a>
                         </li>
                         

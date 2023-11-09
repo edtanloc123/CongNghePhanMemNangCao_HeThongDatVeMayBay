@@ -1,7 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { HanhKhachAPI } from 'src/app/models/hanhkhach.model';
 import { ThongTinChuyenBay } from 'src/app/models/thongtinchuyenbay.model';
@@ -24,6 +24,7 @@ export class ChiTietDatVeComponent implements OnInit {
   taikhoan:String;
   newValue:any;
   ve:VeAPI;
+  value: number = 0;
   datves:any={};
 thongtinchuyenbay:ThongTinChuyenBay;
   constructor(
@@ -33,7 +34,7 @@ thongtinchuyenbay:ThongTinChuyenBay;
     private hanhkhachAPIService:HanhKhachAPIService,
     private veAPIService:VeAPIService,
     private messageService : MessageService,
- 
+    private router:Router,
 ) { 
   
 }
@@ -57,22 +58,24 @@ save(){
           // }else{
           //   this.ve = new VeAPI('2023-11-29', '2023-11-29', 'Thương Gia',  this.newValue, 'CB001',1);
           // }
+          
           for(var i=0;i<this.thongtinchuyenbays.length;i++){
             
-            if(this.newValue==1000000){
-              this.ve = new VeAPI('2023-11-29', this.thongtinchuyenbays[i].ngayCatCanh, 'Phổ Thông',  this.newValue,this.thongtinchuyenbays[i].maCb,this.hanhkhachs[i].maHk);
-              }else if(this.newValue==2000000){
-                this.ve = new VeAPI('2023-11-29', this.thongtinchuyenbays[i].ngayCatCanh, 'Thương Gia',  this.newValue,this.thongtinchuyenbays[i].maCb,this.hanhkhachs[i].maHk);
+            if(this.newValue==10){
+              this.ve = new VeAPI('2023-11-29', this.thongtinchuyenbays[i].ngayCatCanh, 'Phổ Thông',  this.newValue,this.value,this.thongtinchuyenbays[i].maCb,this.hanhkhachs[i].maHk);
+              }else if(this.newValue==20){
+                this.ve = new VeAPI('2023-11-29', this.thongtinchuyenbays[i].ngayCatCanh, 'Thương Gia',  this.newValue,this.value,this.thongtinchuyenbays[i].maCb,this.hanhkhachs[i].maHk);
               }
             
           }
           this.veAPIService.create(this.ve).then(
             res=>{
               var result:any=res as any;
+              
               console.log(result.status);
               if(result.status){
                this.messageService.add({severity:'success',summary:'Success',detail:'Thành công'}); 
-                   
+               this.router.navigate(['/payment',{ve:this.ve.giaGhe}])
               }
            }
           )

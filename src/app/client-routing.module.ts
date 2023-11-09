@@ -10,6 +10,9 @@ import { ChiTietDatVeComponent } from './components/chitietdatve/chitietdatve.co
 import { DashBoardComponent } from './components/admin/dashboard.component';
 import { TrangChinhComponent } from './components/user/trangchinh.component';
 import { VeComponent } from './components/ve/ve.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { PaymentSuccessComponent } from './components/paymentsuccess/paymentsuccess.component';
+import { ThongTinCaNhanComponent } from './components/thongtincanhan/thongtincanhan.component';
 
 const routes: Routes = [
     {
@@ -56,6 +59,18 @@ const routes: Routes = [
               {
                 path:'ve',
                 component: VeComponent,
+              },
+              {
+                path:'payment',
+                component: PaymentComponent,
+              },
+              {
+                path:'paymentsuccess',
+                component: PaymentSuccessComponent,
+              },
+              {
+                path:'thongtincanhan',
+                component: ThongTinCaNhanComponent,
               }
             
         ]
