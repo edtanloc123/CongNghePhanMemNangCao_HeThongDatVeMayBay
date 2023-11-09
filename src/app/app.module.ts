@@ -35,6 +35,7 @@ import { VeComponent } from './components/ve/ve.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { PaymentSuccessComponent } from './components/paymentsuccess/paymentsuccess.component';
 import { ThongTinCaNhanComponent } from './components/thongtincanhan/thongtincanhan.component';
+import { EditThongTinCaNhanComponent } from './components/editthongtincanhan/editthongtincanhan.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ThongTinCaNhanComponent } from './components/thongtincanhan/thongtincan
     VeComponent,
     PaymentComponent,
     PaymentSuccessComponent,
-    ThongTinCaNhanComponent
+    ThongTinCaNhanComponent,
+    EditThongTinCaNhanComponent
   ],
   imports: [
     BrowserModule,

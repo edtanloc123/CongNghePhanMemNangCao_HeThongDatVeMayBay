@@ -13,6 +13,7 @@ import { VeComponent } from './components/ve/ve.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { PaymentSuccessComponent } from './components/paymentsuccess/paymentsuccess.component';
 import { ThongTinCaNhanComponent } from './components/thongtincanhan/thongtincanhan.component';
+import { EditThongTinCaNhanComponent } from './components/editthongtincanhan/editthongtincanhan.component';
 
 const routes: Routes = [
     {
@@ -71,6 +72,10 @@ const routes: Routes = [
               {
                 path:'thongtincanhan',
                 component: ThongTinCaNhanComponent,
+              },
+              {
+                path:'editthongtincanhan',
+                component: EditThongTinCaNhanComponent,
               }
             
         ]
