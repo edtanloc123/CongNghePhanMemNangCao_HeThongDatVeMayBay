@@ -25,9 +25,8 @@
   3.  ||    Xem chuyến bay                            ||      Trần Tấn Lộc                                        ||     12/10/2023
   4.  ||    Kiểm tra chuyến bay                       ||      Trần Đức Hà Sơn                                     ||     12/10/2023
   5.  ||    Tìm chuyến bay                            ||      Nguyễn Quốc Anh Tiến                                ||     12/10/2023       
-  6.  ||    Xem trang điểm đến                        ||      Nguyễn Quốc Anh Tiến                                ||     12/10/2023
-  7.  ||    Xem trang giới thiệu                      ||      Phạm Nguyễn Gia Bảo                                 ||     12/10/2023
-  8.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn                                     ||     12/10/2023
+  6.  ||    Xem trang giới thiệu                      ||      Phạm Nguyễn Gia Bảo                                 ||     12/10/2023
+  7.  ||    Xem trang liên hệ                         ||      Trần Đức Hà Sơn                                     ||     12/10/2023
 <img src="src/assets/images/z4841437023906_6b1e31531deda04daf60273bdc7167c9.jpg" align="center"/>
 
 ## - Sprint 2: 
@@ -48,6 +47,7 @@
   5.  ||    Xử lý đặt vé và thanh toán bằng PayPal    ||      Nguyễn Quốc Anh Tiến                                ||      09/11/2023
   6.  ||    Quản lý hóa đơn                           ||      Nguyễn Quốc Anh Tiến                                ||      09/11/2023
   7.  ||    Quản lý feedback của khách hàng           ||      Phạm Nguyễn Gia Bảo                                 ||      09/11/2023
+  8.  ||    Khách hàng có thể xem và sửa thông tin cá nhân ||    Phạm Nguyễn Gia Bảo, Trần Tấn Lộc                ||      09/11/2023
 
 
   
